@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arasya AI - AI Assistant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="shortcut icon" href="assets/media/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/tampilan.css">
+    <link rel="shortcut icon" href="assets/media/icon.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="app-container" id="app-container">
-        <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+    <div class="app-container" id="app-container"> <!-- Added ID for JS -->
+        <div class="sidebar-backdrop" id="sidebar-backdrop"></div> <!-- Backdrop for mobile sidebar -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-logo">≋</div>
+                <!-- More options icon could be hidden on mobile if close button is prominent -->
                 <div class="sidebar-more-options"><i class="fas fa-ellipsis-h"></i></div>
                 <button class="sidebar-close-btn" id="sidebar-close-btn"><i class="fas fa-times"></i></button>
             </div>
@@ -38,11 +39,20 @@
 
         <main class="chat-area">
             <header class="main-header">
-                <div class="main-menu-icon" id="hamburger-menu">
+                <div class="main-menu-icon" id="hamburger-menu"> <!-- ID for JS -->
                     <i class="fas fa-bars"></i>
                 </div>
                 <div class="main-logo-text">Arasyaa AI</div>
+                <!-- This icon might be redundant if hamburger is on the left on mobile -->
+                <!-- For desktop, it's the rightmost icon -->
+                <!-- Let's ensure CSS handles its position or visibility correctly -->
                 <div class="main-menu-icon" id="desktop-main-menu-icon-placeholder" style="visibility: hidden;">
+                     <!-- This is just a placeholder to keep space on desktop if needed
+                          or we can remove it if the hamburger takes its place universally.
+                          The one with id="hamburger-menu" is now the main one.
+                          On desktop, main-header uses space-between, so one icon is needed on the right.
+                          The #hamburger-menu will be on left for mobile, on right for desktop.
+                     -->
                 </div>
             </header>
 
@@ -51,22 +61,19 @@
                     <div class="welcome-logo">≋</div>
                     <h1>Arasya AI <span class="highlight-purple">Siap</span> membantu kapanpun!</h1>
                     <p class="welcome-subtitle">
-                        Dapatkan panduan ahli dari AI canggih yang berfokus pada Penjualan, Pemasaran, dan Negosiasi. Anda juga bisa mengirimkan gambar atau dokumen untuk dianalisis.
+                        Dapatkan panduan ahli dari AI canggih yang berfokus pada Penjualan, Pemasaran, dan Negosiasi. Pilih agen yang paling sesuai dengan kebutuhan Anda dan mulai percakapan dengan mudah.
                     </p>
+                    
                 </div>
                 <div class="chat-window-container" id="chat-window-container">
                     <div class="chat-window" id="chat-window"></div>
                 </div>
             </div>
-            
-            <!-- File Preview Area (akan dibuat dinamis oleh JS) -->
-            <div id="file-preview-area" style="display:none;"></div>
 
             <div class="main-chat-input-area">
-                 <input type="file" id="file-input" accept="image/*,application/pdf,.txt,.doc,.docx" style="display: none;">
-                 <button class="icon-btn" title="Attach file" id="attach-file-button"><i class="fas fa-paperclip"></i></button>
-                 <input type="text" id="message-input" placeholder="Ketik pesan atau unggah file...">
-                 <button class="icon-btn" title="Voice input" id="voice-input-button"><i class="fas fa-microphone"></i></button>
+                 <button class="icon-btn" title="Attach file"><i class="fas fa-paperclip"></i></button>
+                 <input type="text" id="message-input" placeholder="type your prompt here">
+                 <button class="icon-btn" title="Voice input"><i class="fas fa-microphone"></i></button>
                  <button id="send-button" title="Send"><i class="fas fa-arrow-right"></i></button>
             </div>
         </main>

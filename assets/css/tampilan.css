@@ -344,12 +344,21 @@
             word-wrap: break-word;
             line-height: 1.4;
             font-size: 0.95em; /* Adjust font size for readability */
+            position: relative; /* For copy button positioning */
         }
         .user-message {
             background-color: #6a11cb;
             color: white;
             align-self: flex-end;
             border-bottom-right-radius: 5px;
+        }
+        /* Style for user message containing an image */
+        .user-message img, .bot-message img {
+            max-width: 100%;
+            max-height: 250px; /* Limit preview height */
+            border-radius: 10px;
+            margin-top: 8px;
+            display: block; /* Ensure it takes its own line if text is also present */
         }
         .bot-message {
             background-color: #e9e9eb;
@@ -361,9 +370,101 @@
             font-style: italic; color: #777;
         }
         .bot-message.error p { color: #d9534f; }
-        .bot-message.data-message p {
-            background-color: #f0f8ff; border-left: 3px solid #4682b4; padding-left: 10px;
+
+        /* Add error class for bot messages that are errors */
+        .bot-message.data-message.error p {
+            background-color: #ffebee; /* Light red background for error */
+            border-left: 3px solid #d9534f; /* Red border */
+            color: #d9534f; /* Red text */
         }
+        .bot-message.data-message p { /* Default data message styling */
+            background-color: #f0f8ff;
+            border-left: 3px solid #4682b4;
+            padding-left: 10px;
+        }
+
+
+        /* Message Copy Button */
+        .copy-message-btn {
+            position: absolute;
+            bottom: 5px;
+            font-size: 0.8em;
+            background-color: rgba(0,0,0,0.1);
+            border: none;
+            border-radius: 4px;
+            padding: 3px 6px;
+            cursor: pointer;
+            opacity: 0; /* Hidden by default, show on hover */
+            transition: opacity 0.2s;
+            color: #555;
+        }
+        .message:hover .copy-message-btn {
+            opacity: 1;
+        }
+        .user-message .copy-message-btn {
+            right: 5px;
+            color: #eee;
+            background-color: rgba(255,255,255,0.2);
+        }
+        .bot-message .copy-message-btn {
+            right: 5px; /* Adjust as needed if bubble shape is different */
+        }
+        .copy-message-btn:hover {
+             background-color: rgba(0,0,0,0.2);
+        }
+        .user-message .copy-message-btn:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+
+        /* Code Block Styling */
+        .code-block-wrapper {
+            position: relative;
+            background-color: #2d2d2d; /* Dark background for code */
+            color: #f0f0f0; /* Light text for code */
+            border-radius: 8px;
+            margin: 10px 0;
+            overflow: hidden; /* Ensures copy button stays within bounds */
+        }
+        .code-block-wrapper pre {
+            padding: 15px;
+            padding-top: 35px; /* Space for copy button */
+            margin: 0;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+            white-space: pre-wrap; /* Wrap long lines that are not broken by user */
+            word-wrap: break-word; /* Break long words/strings */
+        }
+        .code-block-wrapper code {
+            display: block; /* Ensures pre takes full width of code */
+        }
+        .copy-code-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background-color: #444;
+            color: #ccc;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        .copy-code-btn i {
+            margin-right: 5px;
+        }
+        .copy-code-btn:hover {
+            background-color: #555;
+        }
+        .copy-code-btn .fas.fa-check { /* Check icon for copied state */
+            color: #77dd77;
+        }
+
 
         .main-chat-input-area {
             display: flex;
@@ -372,6 +473,7 @@
             border-top: 1px solid #e0e0e8;
             background-color: #f9f9ff;
             flex-shrink: 0; /* Prevent input area from shrinking */
+            position: relative; /* For file preview */
         }
         .main-chat-input-area .icon-btn {
             background: none; border: none; font-size: 1.2em; /* Slightly smaller icons */
@@ -393,6 +495,41 @@
             font-size: 1.1em; cursor: pointer; transition: background-color 0.2s;
         }
         .main-chat-input-area #send-button:hover { background-color: #5e0faa; }
+        
+        /* File Preview Area */
+        .file-preview-container {
+            position: absolute;
+            bottom: 100%; /* Position above the input area */
+            left: 15px;
+            right: 15px;
+            background-color: #e9e9eb;
+            padding: 8px;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            font-size: 0.85em;
+        }
+        .file-preview-container img {
+            max-height: 40px;
+            max-width: 40px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        .file-preview-container span {
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .file-preview-container button {
+            background: none;
+            border: none;
+            color: #cc0000;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
 
         .api-key-warning { display: none; }
         .welcome-screen.hidden { display: none; }
@@ -515,6 +652,16 @@
             }
             .suggestion-card p {
                 font-size: 0.8em;
+            }
+            .message {
+                 max-width: 90%; /* Give a bit more space on mobile */
+                 padding-right: 30px; /* Space for copy button if it's always visible */
+            }
+            .copy-message-btn { /* Make copy button more visible on mobile, less reliant on hover */
+                opacity: 0.7; 
+            }
+            .message:hover .copy-message-btn {
+                opacity: 1;
             }
 
 

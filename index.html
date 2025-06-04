@@ -3,231 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Datang!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Platform Kolaboratif AI</title>
     <style>
-        /* Reset dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        :root {
+            --color-bg: #0d1117; /* Warna latar belakang utama GitHub yang gelap */
+            --color-bg-hero-start: #1c123a; /* Warna awal untuk gradient hero */
+            --color-bg-hero-mid: #2a1a50; /* Warna tengah untuk gradient hero */
+            --color-text: #c9d1d9;
+            --color-text-muted: #8b949e;
+            --color-text-heading: #f0f6fc;
+            --color-border: #30363d;
+            --color-border-muted: #21262d;
+            --color-button-secondary-bg: transparent;
+            --color-button-secondary-text: #c9d1d9;
+            --color-button-secondary-border: #30363d;
+            --color-input-bg: #010409;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        }
 
-body, html {
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    line-height: 1.6;
-    overflow: hidden; /* Mencegah scrollbar dari animasi shape */
-}
+        body {
+            margin: 0;
+            font-family: var(--font-sans);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    position: relative;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
-    padding: 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+        /* Header */
+        .site-header {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            /* border-bottom: 1px solid var(--color-border-muted); */ /* Opsional, GitHub baru tidak selalu punya ini */
+            position: relative;
+            z-index: 100;
+        }
 
-.content-wrapper {
-    text-align: center;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.2); /* Sedikit latar belakang gelap transparan untuk konten */
-    padding: 40px 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    max-width: 600px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInContent 1s ease-out 0.5s forwards;
-}
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-@keyframes fadeInContent {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 24px; /* Jarak antar item di kiri */
+        }
 
-.logo-placeholder {
-    margin-bottom: 25px;
-}
+        .logo img { /* DIUBAH DARI .logo svg */
+            /* fill: var(--color-text-heading); */ /* Kemungkinan tidak berfungsi untuk img */
+            height: 32px;
+            width: 32px;
+            /* transition: fill 0.2s ease; */ /* Transisi fill tidak akan berfungsi */
+            transition: opacity 0.2s ease; /* Contoh transisi alternatif */
+            vertical-align: middle; /* Untuk alignment yang lebih baik jika diperlukan */
+        }
+        .logo:hover img { /* DIUBAH DARI .logo:hover svg */
+            /* fill: var(--color-text-muted); */ /* Kemungkinan tidak berfungsi untuk img */
+            opacity: 0.85; /* Contoh efek hover alternatif */
+        }
 
-.logo-placeholder svg {
-    width: 70px;
-    height: 70px;
-    stroke: #fff;
-    opacity: 0.8;
-}
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px; /* Jarak antar menu item */
+        }
 
-h1 {
-    font-size: 2.8em; /* Disesuaikan agar responsif */
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
+        .nav-menu a {
+            color: var(--color-text-heading);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+        .nav-menu a:hover {
+            color: var(--color-text-muted);
+        }
+        .nav-menu .dropdown-arrow {
+            margin-left: 6px;
+            font-size: 10px;
+            opacity: 0.7;
+        }
 
-p {
-    font-size: 1.1em;
-    font-weight: 300;
-    margin-bottom: 2em;
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
 
-.cta-button {
-    display: inline-block;
-    background-color: #fff;
-    color: #e73c7e; /* Warna yang kontras dengan background, bisa disesuaikan */
-    padding: 15px 35px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1em;
-    border-radius: 50px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
+        .search-bar {
+            position: relative;
+        }
+        
+        .search-bar input {
+            background-color: var(--color-input-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            color: var(--color-text);
+            padding: 8px 12px 8px 36px;
+            font-size: 14px;
+            width: 260px;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+        .search-bar input::placeholder {
+            color: var(--color-text-muted);
+        }
+        .search-bar input:focus {
+            border-color: #58a6ff; /* Aksen biru GitHub saat fokus */
+            background-color: var(--color-bg);
+            outline: none;
+        }
+        .search-bar .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-text-muted);
+            pointer-events: none;
+        }
+        .search-bar .search-shortcut {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-text-muted);
+            font-size: 12px;
+            border: 1px solid var(--color-border);
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
 
-.cta-button:hover, .cta-button:focus {
-    background-color: #f0f0f0;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    color: #23a6d5; /* Warna hover bisa berbeda */
-}
-
-/* Elemen dekoratif background (opsional) */
-.background-shapes div {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1); /* Bentuk transparan */
-    animation: float 20s infinite linear;
-}
-
-.shape1 {
-    width: 200px;
-    height: 200px;
-    top: 10%;
-    left: 10%;
-    animation-duration: 25s;
-}
-
-.shape2 {
-    width: 100px;
-    height: 100px;
-    top: 70%;
-    right: 15%;
-    animation-duration: 18s;
-    animation-delay: 2s;
-}
-
-.shape3 {
-    width: 150px;
-    height: 150px;
-    top: 30%;
-    right: 30%;
-    animation-duration: 22s;
-    animation-delay: 4s;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
-    25% { transform: translateY(-20px) translateX(20px) rotate(90deg); }
-    50% { transform: translateY(0px) translateX(-20px) rotate(180deg); }
-    75% { transform: translateY(20px) translateX(20px) rotate(270deg); }
-    100% { transform: translateY(0px) translateX(0px) rotate(360deg); }
-}
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 0 150px; /* Lebih banyak padding */
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(ellipse 80% 70% at 50% 120%, var(--color-bg-hero-mid) 0%, var(--color-bg) 60%);
+        }
+        .hero::before { /* Lapisan gradien halus tambahan */
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0) 0%, var(--color-bg-hero-start) 70%, var(--color-bg) 100%);
+            opacity: 0.5;
+            z-index: 0;
+        }
 
 
-/* Responsif */
-@media (max-width: 768px) {
-    .content-wrapper {
-        padding: 30px 20px;
-    }
-    h1 {
-        font-size: 2.2em;
-    }
-    p {
-        font-size: 1em;
-    }
-    .cta-button {
-        padding: 12px 30px;
-        font-size: 1em;
-    }
-    .shape1 { width: 150px; height: 150px; }
-    .shape2 { width: 80px; height: 80px; }
-    .shape3 { width: 120px; height: 120px; }
-}
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px; /* Batasi lebar konten utama */
+            margin: 0 auto;
+        }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8em;
-    }
-    p {
-        font-size: 0.9em;
-    }
-    .logo-placeholder svg {
-        width: 50px;
-        height: 50px;
-    }
-}
+        .hero h1 {
+            font-size: clamp(3rem, 7vw, 5rem); /* Font lebih besar dan responsif */
+            color: var(--color-text-heading);
+            font-weight: 700; /* Lebih tebal */
+            margin-bottom: 24px;
+            line-height: 1.15;
+            letter-spacing: -0.02em; /* Sedikit kerning */
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.35rem);
+            color: var(--color-text-muted);
+            margin-bottom: 48px; /* Jarak lebih besar ke tombol */
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        /* Tombol utama */
+        .btn {
+            padding: 14px 32px; /* Padding lebih besar */
+            font-size: 17px; /* Font lebih besar */
+            font-weight: 600;
+            border-radius: 8px; /* Border radius lebih besar */
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            border: 1px solid transparent; /* Base border */
+            display: inline-block; /* Agar margin dan padding bekerja dengan baik */
+        }
+
+        .btn-secondary { /* Style untuk "Try Arasya AI" mirip "Try GitHub Copilot" */
+            background-color: var(--color-button-secondary-bg);
+            color: var(--color-button-secondary-text);
+            border-color: var(--color-button-secondary-border);
+        }
+        .btn-secondary:hover {
+            border-color: var(--color-text);
+            background-color: rgba(201, 209, 217, 0.1); /* Sedikit highlight background */
+        }
+
+
+        /* Floating elements - Ditingkatkan */
+        .floating-elements-container {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 0; /* Di belakang konten hero */
+        }
+
+        .float-el {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0; /* Mulai tidak terlihat */
+            animation: float 20s infinite ease-in-out, fadeIn 2.5s 0.5s ease forwards;
+            filter: blur(1px); /* Sedikit blur untuk efek kedalaman */
+        }
+
+        /* Robot (ungu-ish dengan visor) */
+        .float-el.el1 {
+            width: 90px; height: 90px;
+            background: linear-gradient(145deg, #6e40c9, #9669fe);
+            left: 15%; bottom: 15%;
+            animation-duration: 22s;
+            box-shadow: 0 0 25px rgba(110, 64, 201, 0.5);
+            border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%; /* Bentuk organik */
+        }
+        .float-el.el1::before { /* Visor */
+            content: '';
+            position: absolute;
+            top: 30%; left: 50%;
+            transform: translateX(-50%);
+            width: 55%; height: 20%;
+            background: linear-gradient(180deg, #1f2937, #374151);
+            border-radius: 8px 8px 4px 4px;
+            box-shadow: inset 0 2px 3px rgba(0,0,0,0.3);
+        }
+         .float-el.el1::after { /* reflection on visor */
+            content: '';
+            position: absolute;
+            top: 32%; left: 52%;
+            transform: translateX(-50%);
+            width: 40%; height: 5%;
+            background: rgba(150, 200, 255, 0.3);
+            border-radius: 3px;
+            filter: blur(1px);
+        }
+
+
+        /* Hantu Pink */
+        .float-el.el2 {
+            width: 70px; height: 70px;
+            background: radial-gradient(circle, #ff7eb9, #ff25a0);
+            right: 20%; bottom: 40%;
+            animation-duration: 25s;
+            animation-delay: -7s;
+            box-shadow: 0 0 20px rgba(255, 37, 160, 0.4);
+            border-radius: 50% 50% 35% 35% / 60% 60% 40% 40%; /* Bentuk hantu */
+        }
+        .float-el.el2::before, .float-el.el2::after { /* Mata */
+            content: '';
+            position: absolute;
+            width: 12px; height: 15px;
+            background: white;
+            border-radius: 50%;
+            top: 35%;
+            box-shadow: inset 0 -2px 2px rgba(0,0,0,0.1);
+        }
+        .float-el.el2::before { left: 30%; transform: rotate(-10deg); }
+        .float-el.el2::after { right: 30%; transform: rotate(10deg); }
+
+        /* Bebek Kuning */
+        .float-el.el3 {
+            width: 60px; height: 60px;
+            background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+            left: 48%; bottom: 8%;
+            animation-duration: 18s;
+            animation-delay: -12s;
+            box-shadow: 0 0 18px rgba(251, 192, 45, 0.4);
+            border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%; /* Sedikit seperti telur */
+        }
+        .float-el.el3::before { /* Paruh */
+            content: '';
+            position: absolute;
+            top: 45%; left: 50%;
+            transform: translate(-50%, -50%) rotate(5deg);
+            width: 22px; height: 12px;
+            background: #ff9800;
+            border-radius: 3px 3px 6px 6px / 3px 3px 8px 8px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+        }
+
+
+        @keyframes float { /* Animasi mengambang yang lebih kompleks */
+            0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg) scale(1); }
+            20% { transform: translateY(-25px) translateX(15px) rotate(8deg) scale(1.03); }
+            40% { transform: translateY(10px) translateX(-10px) rotate(-5deg) scale(0.97); }
+            60% { transform: translateY(-15px) translateX(20px) rotate(5deg) scale(1.05); }
+            80% { transform: translateY(5px) translateX(-15px) rotate(-3deg) scale(0.95); }
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 0.8; filter: blur(0); } /* Opacity lebih tinggi, hilangkan blur saat muncul */
+        }
+
+        /* Bintang-bintang halus */
+        .stars-bg {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1; /* Di paling belakang */
+        }
+        .star {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7); /* Sedikit transparan */
+            border-radius: 50%;
+            opacity: 0;
+            animation: twinkle 6s infinite ease-in-out;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .nav-menu { display: none; }
+            .hero h1 { font-size: 3.5rem; }
+            .hero .subtitle { font-size: 1.2rem; }
+            .float-el.el1 { left: 5%; width: 70px; height: 70px; }
+            .float-el.el2 { right: 10%; width: 55px; height: 55px; }
+            .float-el.el3 { left: 40%; width: 45px; height: 45px; }
+        }
+
+        @media (max-width: 768px) {
+             .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+             }
+             .header-right {
+                width: 100%;
+             }
+             .search-bar input {
+                width: calc(100% - 48px); /* Disesuaikan padding */
+             }
+            .hero { padding: 60px 0 100px; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero .subtitle { font-size: 1.05rem; margin-bottom: 32px; }
+            .btn { padding: 12px 28px; font-size: 16px; }
+            
+            .float-el.el1 { left: 5%; bottom: 5%; width: 60px; height: 60px; }
+            .float-el.el2 { display: none; } /* Sembunyikan salah satu agar tidak terlalu ramai */
+            .float-el.el3 { left: 70%; bottom: 10%; width: 40px; height: 40px; }
+        }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="logo-placeholder">
-                <!-- Anda bisa mengganti ini dengan tag <img> untuk logo Anda -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+
+    <div class="stars-bg"></div> <!-- Container untuk bintang -->
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="#" class="logo" aria-label="Homepage Arasya AI"> <!-- PERUBAHAN DI SINI -->
+                        <img src="assets/media/icon.svg" alt="Arasya AI Logo"> <!-- PERUBAHAN DI SINI -->
+                    </a>
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="donation.html">Donation</a></li> <!-- Link yang sudah ada -->
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <span class="search-icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10.717 10l3.031 3.031a.75.75 0 11-1.06 1.06L9.657 11.06A5.5 5.5 0 1110.717 10zM5.5 9a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"></path></svg>
+                        </span>
+                        <input type="text" placeholder="Search or jump to...">
+                        <span class="search-shortcut">/</span>
+                    </div>
+                </div>
             </div>
-            <h1>Selamat Datang di Arasya AI</h1>
-            <p>Kami senang Anda di sini. Bersiaplah untuk pengalaman yang luar biasa.</p>
-            <a href="chatbot.html" class="cta-button">Jelajahi Sekarang</a>
         </div>
-        <div class="background-shapes">
-            <div class="shape shape1"></div>
-            <div class="shape shape2"></div>
-            <div class="shape shape3"></div>
-        </div>
-    </div>
-    <script>document.addEventListener('DOMContentLoaded', () => {
-    console.log("Halaman pra-index telah dimuat!");
+    </header>
 
-    // Contoh: Jika Anda ingin ada auto-redirect setelah beberapa detik
-    // (hapus atau sesuaikan jika tidak diperlukan)
-    /*
-    const autoRedirectDelay = 7000; // 7 detik
-    const ctaButton = document.querySelector('.cta-button');
-    let redirectTimer;
+    <main>
+        <section class="hero">
+            <div class="floating-elements-container">
+                <div class="float-el el1"></div>
+                <div class="float-el el2"></div>
+                <div class="float-el el3"></div>
+            </div>
+            <div class="container hero-content">
+                <h1>Buat imajinasi kamu di Arasya AI</h1>
+                <p class="subtitle">Bergabunglah ke dunia yang akan menjadi masa depan kamu!</p>
+                <!-- Form email dan tombol sign up GitHub dihapus -->
+                <a href="chatbot.html" type="button" class="btn btn-secondary">Try Arasya AI</a>
+            </div>
+        </section>
+    </main>
 
-    function redirectToIndex() {
-        window.location.href = 'index.html';
-    }
+    <script>
+        // JavaScript untuk efek bintang-bintang
+        const starsContainer = document.querySelector('.stars-bg');
+        const numStars = 150; // Jumlah bintang bisa disesuaikan
 
-    // Mulai timer auto-redirect
-    redirectTimer = setTimeout(redirectToIndex, autoRedirectDelay);
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            const size = Math.random() * 2.5 + 0.5; // Ukuran bintang 0.5px - 3px
+            star.style.width = `${size}px`;
+            star.style.height = star.style.width;
+            star.style.left = `${Math.random() * 100}%`;
+            star.style.top = `${Math.random() * 100}%`;
+            star.style.animationDelay = `${Math.random() * 6}s`; // Penundaan animasi agar tidak serempak
+            star.style.animationDuration = `${Math.random() * 4 + 4}s`; // Durasi animasi bervariasi
+            starsContainer.appendChild(star);
+        }
+    </script>
 
-    // Jika tombol diklik, batalkan auto-redirect
-    // (karena navigasi sudah terjadi via href tombol)
-    if (ctaButton) {
-        ctaButton.addEventListener('click', () => {
-            clearTimeout(redirectTimer);
-        });
-    }
-    */
-
-    // Anda bisa menambahkan interaksi atau animasi lain di sini jika diperlukan
-    // Misalnya, animasi tambahan saat mouse hover pada elemen tertentu
-});</script>
 </body>
 </html>

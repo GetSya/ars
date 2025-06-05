@@ -1,4 +1,5 @@
 
+        
         :root {
             /* Light Theme (Default) */
             --app-bg: #f7f7ff;
@@ -658,20 +659,23 @@
         .main-chat-input-area #send-button:hover { background-color: var(--send-btn-hover-bg); }
         
         #file-preview-area {
-            position: absolute;
-            bottom: 100%;
-            left: 0;
-            right: 0;
-            padding: 0 15px;
-            display: none;
-            z-index: 10;
+            /* position: absolute; REMOVED */
+            /* bottom: 100%; REMOVED */
+            /* left: 0; REMOVED */
+            /* right: 0; REMOVED */
+            padding: 0 15px; /* Keep for horizontal alignment */
+            margin-bottom: 8px; /* Optional: add some space if .file-preview-container has no margin */
+            display: none; /* JS will toggle this */
+            /* z-index: 10; REMOVED */
+            width: 100%; /* Ensure it takes full width in flex column if not default */
+            box-sizing: border-box; /* Ensure padding is included in width calculation */
         }
         .file-preview-container {
             background-color: var(--file-preview-bg);
             color: var(--text-primary);
             padding: 8px;
-            border-radius: 8px 8px 0 0;
-            box-shadow: 0 -2px 5px var(--card-shadow, rgba(0,0,0,0.1));
+            border-radius: 8px; /* Changed from 8px 8px 0 0 as it's no longer 'stuck' to the top of input */
+            box-shadow: 0 2px 5px var(--card-shadow, rgba(0,0,0,0.1)); /* Adjusted shadow slightly if needed, or keep as is */
             display: flex;
             align-items: center;
             font-size: 0.85em;

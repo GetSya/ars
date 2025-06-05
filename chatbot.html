@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arasya AI - AI Assistant</title>
+    <title>AIRA - AI Assistant</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="assets/media/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/tampilan.css">
@@ -14,25 +14,44 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-logo">≋</div>
-                <div class="sidebar-more-options"><i class="fas fa-ellipsis-h"></i></div>
+                <!-- Tombol close akan muncul di mobile, tombol more options disembunyikan via CSS -->
                 <button class="sidebar-close-btn" id="sidebar-close-btn"><i class="fas fa-times"></i></button>
+                <div class="sidebar-more-options"><i class="fas fa-ellipsis-h"></i></div>
             </div>
 
             <button class="begin-new-chat" id="new-chat-button-sidebar">
-                Begin a New Chat <span class="plus-icon">+</span>
+                New Chat <span class="plus-icon">+</span>
             </button>
 
             <div class="sidebar-search">
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search">
             </div>
+            
+            <!-- Placeholder untuk daftar chat history jika akan diimplementasikan -->
+            <!-- <div class="sidebar-section-title">History</div>
+            <ul class="sidebar-list" id="chat-history-list">
+                <li class="active-chat-history">
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="item-text">Diskusi Strategi Pemasaran</span>
+                    <i class="fas fa-trash delete-chat-btn"></i>
+                </li>
+                <li>
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="item-text">Analisis Dokumen Penjualan Q1</span>
+                    <i class="fas fa-trash delete-chat-btn"></i>
+                </li>
+            </ul> -->
+
 
             <div class="sidebar-footer">
-                <a href="https://instagram.com/arsrfii" style="text-decoration: none; color: white;" target="_blank">
-                <div class="user-info">
-                <i class="fab fa-instagram"></i> arsrfii
-                </div>
-            </a>
+                 <a href="https://instagram.com/arsrfii" target="_blank"> <!-- Tambahkan target="_blank" -->
+                    <div class="user-info">
+                        <i class="fab fa-instagram"></i> arsrfii
+                    </div>
+                </a>
+                <!-- Theme toggle bisa ditambahkan di sini jika diinginkan -->
+                <!-- <button id="theme-toggle-button"><i class="fas fa-moon"></i></button> -->
             </div>
         </aside>
 
@@ -41,37 +60,61 @@
                 <div class="main-menu-icon" id="hamburger-menu">
                     <i class="fas fa-bars"></i>
                 </div>
-                <div class="main-logo-text">Arasyaa AI</div>
+                <div class="main-logo-text">AIRA</div>
+                <!-- Placeholder untuk menyeimbangkan header, jika ikon menu di sisi kiri -->
                 <div class="main-menu-icon" id="desktop-main-menu-icon-placeholder" style="visibility: hidden;">
+                     <i class="fas fa-bars"></i> <!-- Ikon yang sama agar lebarnya sama -->
                 </div>
             </header>
 
             <div class="welcome-or-chat-content">
                 <div class="welcome-screen" id="welcome-screen">
                     <div class="welcome-logo">≋</div>
-                    <h1>Arasya AI <span class="highlight-purple">Siap</span> membantu kapanpun!</h1>
+                    <h1>AIRA <span class="highlight-purple">Siap</span> membantu kapanpun!</h1>
                     <p class="welcome-subtitle">
                         Dapatkan panduan ahli dari AI canggih yang berfokus pada Penjualan, Pemasaran, dan Negosiasi. Anda juga bisa mengirimkan gambar atau dokumen untuk dianalisis.
                     </p>
+                    <!-- Suggestion Cards (Contoh) -->
+                    <!-- <div class="suggestion-cards">
+                        <div class="suggestion-card">
+                            <div class="card-header">
+                                <h3>Buat Email Pemasaran</h3>
+                                <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                            <p>Rancang email pemasaran yang menarik untuk produk baru.</p>
+                        </div>
+                        <div class="suggestion-card">
+                            <div class="card-header">
+                                <h3>Analisis Data Penjualan</h3>
+                                <span class="arrow-icon"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                            <p>Bantu saya memahami tren dari data penjualan terakhir.</p>
+                        </div>
+                    </div> -->
                 </div>
                 <div class="chat-window-container" id="chat-window-container">
-                    <div class="chat-window" id="chat-window"></div>
+                    <div class="chat-window" id="chat-window">
+                        <!-- Pesan akan ditambahkan di sini oleh JavaScript -->
+                    </div>
                 </div>
             </div>
             
-            <!-- File Preview Area (akan dibuat dinamis oleh JS) -->
-            <div id="file-preview-area" style="display:none;"></div>
+            <div id="file-preview-area">
+                <!-- File preview akan ditampilkan di sini oleh JavaScript -->
+            </div>
 
             <div class="main-chat-input-area">
                  <input type="file" id="file-input" accept="image/*,application/pdf,.txt,.doc,.docx" style="display: none;">
                  <button class="icon-btn" title="Attach file" id="attach-file-button"><i class="fas fa-paperclip"></i></button>
-                 <input type="text" id="message-input" placeholder="Ketik pesan atau unggah file...">
-                 <button class="icon-btn" title="Voice input" id="voice-input-button"><i class="fas fa-microphone"></i></button>
+                 <!-- Mengganti input type text menjadi textarea untuk multiline support -->
+                 <textarea id="message-input" placeholder="Ketik pesan atau unggah file..." rows="1"></textarea>
+                 <button class="icon-btn" title="Voice input" id="voice-input-button"></button>
                  <button id="send-button" title="Send"><i class="fas fa-arrow-right"></i></button>
             </div>
         </main>
     </div>
 
-    <script src="assets/js/fungsi.js"></script>
+    <script src="assets/js/fungsi.js">
+    </script>
 </body>
 </html>

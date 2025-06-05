@@ -3,228 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dukungan untuk Arasya AI</title>
+    <title>Dukungan AIRA - Ultra Responsive</title>
     <style>
         :root {
-            --color-bg: #0d1117;
-            --color-bg-card: #161b22;
-            --color-text: #c9d1d9;
-            --color-text-muted: #8b949e;
-            --color-text-heading: #f0f6fc;
-            --color-border: #30363d;
-            --color-accent: #58a6ff; /* Biru GitHub */
-            --color-green-accent: #238636; /* Hijau GitHub */
-            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            --bg-color-dark: #080a0e;
+            --bg-color-mid: #0d1117;
+            --bg-color-light: #161b22;
+            
+            --card-bg-color: rgba(22, 27, 34, 0.75);
+            --card-bg-hover-color: rgba(31, 37, 46, 0.85);
+            --card-blur-intensity: 10px;
+
+            --text-color-primary: #e6edf3;
+            --text-color-secondary: #909da8;
+            --text-color-heading: #f0f6fc;
+            
+            --accent-color: #58a6ff;
+            --accent-color-glow: rgba(88, 166, 255, 0.6);
+            --green-accent-color: #238636;
+            --green-accent-hover-color: #2ea043;
+
+            --border-color: rgba(48, 54, 61, 0.6);
+            --border-glow-color: rgba(88, 166, 255, 0.4);
+            
+            --shadow-color-strong: rgba(0, 0, 0, 0.4); /* Slightly reduced alpha */
+            --shadow-color-soft: rgba(0, 0, 0, 0.25); /* Slightly reduced alpha */
+
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            
+            --container-tilt-intensity: 7; 
+            --card-tilt-intensity: 8deg; /* Reduced slightly */
+            --card-icon-parallax: 0.25; 
+            --card-text-parallax: 0.12;
+
+            /* Fluid Typography - slightly more conservative min values */
+            --font-size-h1: clamp(1.6rem, 1.2vw + 1.3rem, 2.6rem);
+            --font-size-intro: clamp(0.9rem, 0.4vw + 0.75rem, 1.15rem);
+            --font-size-method-name: clamp(1rem, 0.2vw + 0.85rem, 1.2rem);
+            --font-size-method-number: clamp(0.85rem, 0.1vw + 0.75rem, 0.95rem);
+            --font-size-button: clamp(0.8rem, 0.2vw + 0.65rem, 0.9rem);
+            --font-size-small: clamp(0.75rem, 0.1vw + 0.65rem, 0.85rem);
         }
 
-        body {
+        *, *::before, *::after {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+
+        @keyframes subtleAurora { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        @keyframes stars-flow { 0% { transform: translateY(0px); } 100% { transform: translateY(-200vh); } }
+
+        html { scroll-behavior: smooth; }
+
+        body {
             font-family: var(--font-sans);
-            background-color: var(--color-bg);
-            color: var(--color-text);
-            line-height: 1.6;
+            background-color: var(--bg-color-mid);
+            color: var(--text-color-primary);
+            line-height: 1.55; /* Slightly tighter */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
+            /* Responsive padding for the body itself */
+            padding: clamp(12px, 2.5vw, 24px); 
+            perspective: 1800px; 
+            overflow-x: hidden; /* Prevent horizontal scrollbars from appearing due to any rogue element */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
+
+        .background-layers { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; overflow: hidden; }
+        .aurora-layer { width: 100%; height: 100%; background: linear-gradient( -45deg, rgba(var(--accent-rgb, 88, 166, 255), 0.04), rgba(var(--green-accent-rgb, 35, 134, 54), 0.02), rgba(var(--bg-color-dark-rgb, 8, 10, 14), 0.08) ); background-size: 300% 300%; animation: subtleAurora 45s ease infinite; opacity: 0.6; }
+        .stars { position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 300%; background-repeat: repeat; z-index: -1; will-change: transform; }
+        #stars1 { background-image: url("data:image/svg+xml,%3Csvg width='2' height='2' viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='0.4' fill='rgba(200,210,220,0.15)'/%3E%3C/svg%3E"); animation: stars-flow 180s linear infinite; }
+        #stars2 { background-image: url("data:image/svg+xml,%3Csvg width='3' height='3' viewBox='0 0 3 3' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1.5' cy='1.5' r='0.6' fill='rgba(200,210,220,0.25)'/%3E%3C/svg%3E"); animation: stars-flow 120s linear infinite; animation-delay: -30s; }
+        #stars3 { background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='0.8' fill='rgba(200,210,220,0.35)'/%3E%3C/svg%3E"); animation: stars-flow 80s linear infinite; animation-delay: -60s; }
 
         .donation-container {
-            background-color: var(--color-bg-card);
-            padding: 30px 40px;
-            border-radius: 12px;
-            border: 1px solid var(--color-border);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-            max-width: 500px;
-            width: 100%;
+            background-color: var(--card-bg-color);
+            backdrop-filter: blur(var(--card-blur-intensity)) saturate(150%);
+            -webkit-backdrop-filter: blur(var(--card-blur-intensity)) saturate(150%);
+            /* Responsive padding for the container */
+            padding: clamp(20px, 4vw, 40px) clamp(15px, 3vw, 35px);
+            border-radius: clamp(14px, 2vw, 20px);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 clamp(12px, 2.5vh, 25px) clamp(30px, 5vh, 50px) var(--shadow-color-strong),
+                        inset 0 0 12px rgba(255,255,255,0.02);
+            
+            /* Key change for responsiveness: */
+            width: 100%; /* Take full available width within body padding */
+            max-width: 600px; /* Slightly reduced max-width */
+            margin-left: auto;
+            margin-right: auto;
+
             text-align: center;
+            transform-style: preserve-3d;
+            transition: transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease-out;
+            animation: containerPopIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            position: relative;
+            will-change: transform, box-shadow;
         }
+        .donation-container::before, .donation-container::after { content: ''; position: absolute; left: -1px; top: -1px; background: linear-gradient(60deg, var(--accent-color), var(--green-accent-color), var(--text-color-heading), var(--accent-color)); background-size: 300% 300%; width: calc(100% + 2px); height: calc(100% + 2px); z-index: -1; border-radius: inherit; animation: borderSteam 15s linear infinite; opacity: 0; transition: opacity 0.4s ease-in-out; }
+        .donation-container:hover::before, .donation-container:hover::after, .donation-container:focus-within::before, .donation-container:focus-within::after { opacity: 0.8; }
+        .donation-container::after { filter: blur(12px); } /* Slightly reduced blur */
+        @keyframes borderSteam { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        @keyframes containerPopIn { 0% { opacity: 0; transform: scale(0.75) translateY(50px) translateZ(-250px) rotateX(-20deg); } 100% { opacity: 1; transform: scale(1) translateY(0) translateZ(0) rotateX(0deg); } }
 
-        .donation-container h1 {
-            color: var(--color-text-heading);
-            font-size: 2em;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        .donation-container h1 .ai-name {
-            color: var(--color-accent); /* Warna aksen untuk nama AI */
-        }
+        .donation-container h1 { color: var(--text-color-heading); font-size: var(--font-size-h1); margin-bottom: clamp(12px, 2vh, 20px); font-weight: 700; text-shadow: 0 2px 4px var(--shadow-color-soft); letter-spacing: -0.25px; }
+        .ai-name { color: var(--accent-color); font-weight: 800; display: inline-block; position: relative; }
+        .ai-name::after { content: ''; position: absolute; top: 0; left: -25%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent); animation: textShine 5s infinite ease-in-out 1s; transform: skewX(-20deg); pointer-events: none; }
+        @keyframes textShine { 0% { left: -25%; opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { left: 125%; opacity: 0; } }
 
-
-        .donation-container .intro-text {
-            color: var(--color-text-muted);
-            margin-bottom: 30px;
-            font-size: 1.1em;
-        }
+        .intro-text { color: var(--text-color-secondary); font-size: var(--font-size-intro); margin-bottom: clamp(25px, 4vh, 40px); max-width: 95%; margin-left: auto; margin-right: auto; opacity: 0; transform: translateY(12px); animation: textFadeIn 1s ease-out 0.7s forwards; }
+        @keyframes textFadeIn { to { opacity: 1; transform: translateY(0); } }
 
         .payment-methods {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-bottom: 30px;
+            display: grid;
+            /* Switch to 2 columns at a smaller breakpoint if needed, or keep it adaptive */
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); /* More adaptive grid columns */
+            gap: clamp(12px, 2vw, 20px);
+            margin-bottom: clamp(25px, 4vh, 40px);
         }
 
         .payment-method {
-            background-color: var(--color-bg); /* Sedikit lebih gelap dari card */
-            padding: 15px 20px;
-            border-radius: 8px;
-            border: 1px solid var(--color-border);
+            background-color: var(--card-bg-color);
+            backdrop-filter: blur(calc(var(--card-blur-intensity) * 0.7)) saturate(120%);
+            -webkit-backdrop-filter: blur(calc(var(--card-blur-intensity) * 0.7)) saturate(120%);
+            padding: clamp(12px, 2vw, 20px);
+            border-radius: clamp(8px, 1.2vw, 14px);
+            border: 1px solid var(--border-color);
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: transform 0.2s ease-out;
+            flex-direction: column; 
+            align-items: center; 
+            gap: clamp(8px, 1.5vw, 12px);
+            text-align: center; 
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            opacity: 0;
+            transform: perspective(700px) rotateX(-12deg) translateY(25px);
+            animation: itemSlideUp 0.7s ease-out forwards;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.02);
+            will-change: transform, box-shadow;
         }
-        .payment-method:hover {
-            transform: translateY(-2px);
-            border-color: var(--color-accent);
+        /* If the grid is adaptive (auto-fit), explicit media queries for flex-direction might not be as critical,
+           but can be used for fine-tuning specific breakpoints if needed. */
+        @media (min-width: 380px) { /* Example: if items are wide enough, allow row layout */
+            .payment-method.single-row-candidate { /* Add this class via JS if only one item per row in grid */
+                /* flex-direction: row; 
+                   justify-content: space-between; 
+                   text-align: left; */
+                 /* This part becomes tricky with auto-fit grid. Simpler to keep column for consistency unless complex JS is used */
+            }
         }
 
 
-        .method-info {
-            text-align: left;
+        @keyframes itemSlideUp { to { opacity: 1; transform: perspective(700px) rotateX(0deg) translateY(0); } }
+        .payment-method:hover, .payment-method:focus-within {
+            transform: translateY(-8px) rotateX(var(--card-tilt-intensity)) rotateY(calc(var(--card-tilt-intensity) * 0.4)) translateZ(30px) scale(1.02);
+            box-shadow: 0 20px 40px var(--shadow-color-soft), 0 0 15px var(--border-glow-color), inset 0 1px 0 rgba(255,255,255,0.07);
+            border-color: var(--accent-color);
+            background-color: var(--card-bg-hover-color);
+            z-index: 10;
         }
+        .payment-method:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; box-shadow: 0 0 0 3px var(--accent-color-glow); }
+        .payment-method::before { content: ""; position: absolute; top: 0; left: -150%; width: 80%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent); transition: left 0.7s cubic-bezier(0.23, 1, 0.32, 1); transform: skewX(-25deg); pointer-events: none; }
+        .payment-method:hover::before, .payment-method:focus-within::before { left: 170%; }
 
-        .method-name {
-            font-weight: 600;
-            color: var(--color-text-heading);
-            font-size: 1.1em;
-            margin-bottom: 4px;
-        }
+        .method-info { display: flex; flex-direction: column; align-items: center; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 1; }
+        /* @media (min-width: 380px) { .method-info.single-row-candidate { align-items: flex-start; } } */
 
-        .method-number {
-            color: var(--color-text-muted);
-            font-size: 1em;
-            word-break: break-all; /* Agar nomor panjang tidak merusak layout */
-        }
+
+        .method-name { font-weight: 600; color: var(--text-color-heading); font-size: var(--font-size-method-name); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .logo-icon { font-weight: bold; padding: clamp(5px, 0.8vw, 7px) clamp(8px, 1.2vw, 12px); border-radius: clamp(5px, 0.8vw, 8px); font-size: var(--font-size-small); display: inline-flex; align-items: center; justify-content: center; min-width: clamp(45px, 8vw, 60px); box-shadow: 0 1px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.04); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease; color: white; }
+        .payment-method:hover .logo-icon, .payment-method:focus-within .logo-icon { transform: scale(1.12) rotate(-7deg) translateZ(8px); box-shadow: 0 4px 10px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.12); }
+        .dana-icon { background: linear-gradient(140deg, #108ee9, #0077cc); }
+        .shopeepay-icon { background: linear-gradient(140deg, #ee4d2d, #ff6633); }
+        .ovo-icon { background: linear-gradient(140deg, #4d2683, #6a3bbc); }
+        .gopay-icon { background: linear-gradient(140deg, #00aed6, #009ac0); }
+
+        .method-number { color: var(--text-color-secondary); font-size: var(--font-size-method-number); word-break: break-all; transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .payment-method:hover .method-name, .payment-method:focus-within .method-name { transform: translateZ(4px); }
+        .payment-method:hover .method-number, .payment-method:focus-within .method-number { transform: translateZ(2px); }
 
         .copy-btn {
-            background-color: var(--color-green-accent);
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 0.9em;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.2s ease, opacity 0.2s ease;
-            min-width: 70px; /* Agar lebar tombol konsisten */
+            background: linear-gradient(145deg, var(--green-accent-color), #1b6029);
+            color: white; border: none;
+            padding: clamp(7px, 1.2vh, 10px) clamp(12px, 2.5vw, 18px);
+            border-radius: clamp(5px, 0.8vw, 8px);
+            font-size: var(--font-size-button);
+            font-weight: 600; cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1); 
+            min-width: clamp(70px, 12vw, 90px);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.18), inset 0 -2px 0px rgba(0,0,0,0.12);
+            z-index: 1;
+            align-self: stretch; 
+            margin-top: auto; 
+            will-change: transform;
         }
+        /* No need for media queries for copy-btn layout if payment-method is always column */
+        .copy-btn:hover, .copy-btn:focus-visible { background: linear-gradient(145deg, var(--green-accent-hover-color), var(--green-accent-color)); transform: translateY(-3px) scale(1.06); box-shadow: 0 6px 12px rgba(0,0,0,0.25), inset 0 -1px 0px rgba(0,0,0,0.08); }
+        .copy-btn.copied { background: linear-gradient(145deg, #1a7f37, #15632a); opacity: 0.95; transform: translateY(0px) scale(1); box-shadow: 0 1px 4px rgba(0,0,0,0.12), inset 0 1px 0px rgba(0,0,0,0.1); }
+        .copy-btn:active { transform: translateY(1px) scale(0.98); box-shadow: 0 1px 2px rgba(0,0,0,0.15), inset 0 1px 0px rgba(0,0,0,0.15); }
+        .copy-btn:focus-visible { outline: 2px solid var(--green-accent-hover-color); outline-offset: 2px; }
 
-        .copy-btn:hover {
-            background-color: #2ea043; /* Warna hijau lebih terang saat hover */
-        }
-        .copy-btn.copied {
-            background-color: #1a7f37; /* Warna hijau lebih gelap saat "Tersalin" */
-            opacity: 0.8;
-        }
-
-        .thank-you-text {
-            color: var(--color-text-muted);
-            font-size: 0.95em;
-            margin-top: 20px;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: var(--color-accent);
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-
-        /* Logo Sederhana (CSS-only) - opsional, bisa diganti gambar jika ada */
-        .logo-icon {
-            font-weight: bold;
-            padding: 5px 8px;
-            border-radius: 4px;
-            margin-right: 10px;
-            font-size: 0.9em;
-            display: inline-block; /* agar bisa diberi padding dan margin */
-            min-width: 50px; /* agar lebar konsisten */
-            text-align: center;
-        }
-        .dana-icon { background-color: #108ee9; color: white; }
-        .shopeepay-icon { background-color: #ee4d2d; color: white; }
-        .ovo-icon { background-color: #4d2683; color: white; }
-        .gopay-icon { background-color: #00aed6; color: white; }
-
-
-        @media (max-width: 480px) {
-            .donation-container {
-                padding: 20px;
-            }
-            .donation-container h1 {
-                font-size: 1.8em;
-            }
-            .donation-container .intro-text {
-                font-size: 1em;
-            }
-            .payment-method {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
-            .copy-btn {
-                align-self: flex-end; /* Tombol copy ke kanan jika item jadi kolom */
-            }
-        }
+        .thank-you-text { color: var(--text-color-secondary); font-size: var(--font-size-small); margin-top: clamp(18px, 2.8vh, 28px); }
+        .back-link { display: inline-flex; align-items: center; margin-top: clamp(25px, 3.5vh, 35px); color: var(--accent-color); text-decoration: none; font-size: var(--font-size-small); font-weight: 500; transition: color 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease; position: relative; }
+        .back-link:hover, .back-link:focus-visible { color: #79c0ff; text-shadow: 0 0 8px var(--accent-color-glow); transform: translateX(-5px); }
+        .back-link::before { content: '←'; margin-right: 8px; font-size: 1.1em; transition: transform 0.2s ease; } /* Reduced font size */
+        .back-link:hover::before, .back-link:focus-visible::before { transform: translateX(-3px) scale(1.05); }
+        .back-link:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 3px; }
 
     </style>
 </head>
 <body>
+    <div class="background-layers">
+        <div class="aurora-layer"></div>
+        <div class="stars" id="stars1"></div>
+        <div class="stars" id="stars2"></div>
+        <div class="stars" id="stars3"></div>
+    </div>
 
-    <div class="donation-container">
-        <h1>Dukungan untuk <span class="ai-name">Arasya AI</span></h1>
-        <p class="intro-text">Setiap dukungan Anda sangat berarti untuk pengembangan dan pemeliharaan Arasya AI agar terus bisa memberikan manfaat.</p>
+    <div class="donation-container" id="donationCard" role="main" aria-labelledby="donation-title">
+        <h1 id="donation-title">Dukungan untuk <span class="ai-name">AIRA</span></h1>
+        <p class="intro-text">Inovasi berkelanjutan AIRA didukung oleh kemurahan hati Anda. Setiap kontribusi adalah bahan bakar semangat kami.</p>
 
         <div class="payment-methods">
-            <div class="payment-method">
-                <div class="method-info">
-                    <div class="method-name"><span class="logo-icon dana-icon">Dana</span></div>
+            <!-- Dana -->
+            <div class="payment-method" id="pm-dana" data-tilt-card>
+                <div class="method-info" data-tilt-content>
+                    <div class="method-name"><span class="logo-icon dana-icon" data-tilt-icon>Dana</span></div>
                     <span class="method-number" id="dana-number">088213292687</span>
                 </div>
-                <button class="copy-btn" data-clipboard-target="#dana-number">Salin</button>
+                <button class="copy-btn" data-clipboard-target="#dana-number" data-magnetic-button aria-label="Salin nomor Dana">Salin</button>
             </div>
 
-            <div class="payment-method">
-                <div class="method-info">
-                    <div class="method-name"><span class="logo-icon shopeepay-icon">ShopeePay</span></div>
+            <!-- ShopeePay -->
+            <div class="payment-method" id="pm-shopeepay" data-tilt-card>
+                <div class="method-info" data-tilt-content>
+                    <div class="method-name"><span class="logo-icon shopeepay-icon" data-tilt-icon>ShopeePay</span></div>
                     <span class="method-number" id="shopeepay-number">088213292687</span>
                 </div>
-                <button class="copy-btn" data-clipboard-target="#shopeepay-number">Salin</button>
+                <button class="copy-btn" data-clipboard-target="#shopeepay-number" data-magnetic-button aria-label="Salin nomor ShopeePay">Salin</button>
             </div>
 
-            <div class="payment-method">
-                <div class="method-info">
-                    <div class="method-name"><span class="logo-icon ovo-icon">OVO</span></div>
+            <!-- OVO -->
+            <div class="payment-method" id="pm-ovo" data-tilt-card>
+                <div class="method-info" data-tilt-content>
+                    <div class="method-name"><span class="logo-icon ovo-icon" data-tilt-icon>OVO</span></div>
                     <span class="method-number" id="ovo-number">088213292687</span>
                 </div>
-                <button class="copy-btn" data-clipboard-target="#ovo-number">Salin</button>
+                <button class="copy-btn" data-clipboard-target="#ovo-number" data-magnetic-button aria-label="Salin nomor OVO">Salin</button>
             </div>
 
-            <div class="payment-method">
-                <div class="method-info">
-                    <div class="method-name"><span class="logo-icon gopay-icon">GoPay</span></div>
+            <!-- GoPay -->
+            <div class="payment-method" id="pm-gopay" data-tilt-card>
+                 <div class="method-info" data-tilt-content>
+                    <div class="method-name"><span class="logo-icon gopay-icon" data-tilt-icon>GoPay</span></div>
                     <span class="method-number" id="gopay-number">085183221210</span>
                 </div>
-                <button class="copy-btn" data-clipboard-target="#gopay-number">Salin</button>
+                <button class="copy-btn" data-clipboard-target="#gopay-number" data-magnetic-button aria-label="Salin nomor GoPay">Salin</button>
             </div>
         </div>
 
-        <p class="thank-you-text">Terima kasih atas kemurahan hati Anda!</p>
+        <p class="thank-you-text">Terima kasih telah menjadi bagian dari perjalanan AIRA!</p>
         
-        <a href="javascript:history.back()" class="back-link">← Kembali ke Halaman Sebelumnya</a>
-
+        <a href="javascript:history.back()" class="back-link" aria-label="Kembali ke halaman sebelumnya">Kembali</a>
     </div>
 
     <script>
+    // JavaScript remains largely the same as the previous "Ultimate Edition"
+    // The focus of this revision was on CSS for responsiveness.
+    // No major changes to JS logic are needed for these CSS adjustments.
+    document.addEventListener('DOMContentLoaded', () => {
+        const donationCard = document.getElementById('donationCard');
+        const paymentMethods = document.querySelectorAll('.payment-method');
+        const magneticButtons = document.querySelectorAll('[data-magnetic-button]');
+        const tiltCards = document.querySelectorAll('[data-tilt-card]');
+
+        const mainTiltIntensity = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--container-tilt-intensity').trim()) || 7;
+        const cardIconParallax = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--card-icon-parallax').trim()) || 0.25;
+        const cardTextParallax = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--card-text-parallax').trim()) || 0.12;
+
+        // 1. Main Donation Card Tilt Interaction
+        if (donationCard && window.matchMedia('(pointer: fine)').matches && window.innerWidth > 768) { // Adjusted to 768 for tablets too
+            let initialTransform = getComputedStyle(donationCard).transform;
+            if (initialTransform === 'none') initialTransform = ''; // Ensure it's a valid transform string
+            const initialBoxShadow = getComputedStyle(donationCard).boxShadow;
+
+            document.body.addEventListener('mousemove', (e) => {
+                const rect = donationCard.getBoundingClientRect();
+                if (rect.width === 0 || rect.height === 0) return; 
+
+                const proximity = Math.max(rect.width, rect.height) * 0.8; // Proximity based on card size
+                if (e.clientX < rect.left - proximity || e.clientX > rect.right + proximity ||
+                    e.clientY < rect.top - proximity || e.clientY > rect.bottom + proximity) {
+                     if (donationCard.style.transform !== initialTransform) {
+                        requestAnimationFrame(() => {
+                            donationCard.style.transform = initialTransform;
+                            donationCard.style.boxShadow = initialBoxShadow;
+                        });
+                    }
+                    return;
+                }
+                
+                const cardX = rect.left + rect.width / 2;
+                const cardY = rect.top + rect.height / 2;
+                const mouseX = e.clientX - cardX;
+                const mouseY = e.clientY - cardY;
+                
+                const rotateY = (mouseX / (rect.width / 2)) * mainTiltIntensity; // Normalized to card width
+                const rotateX = -(mouseY / (rect.height / 2)) * mainTiltIntensity; // Normalized to card height
+
+
+                requestAnimationFrame(() => {
+                    // Base the transform on perspective defined on body, but apply specific rotations
+                    donationCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1)`;
+                });
+            });
+
+            document.body.addEventListener('mouseleave', () => {
+                 requestAnimationFrame(() => {
+                    donationCard.style.transform = initialTransform; 
+                    donationCard.style.boxShadow = initialBoxShadow;
+                });
+            });
+             // Recalculate initial transform on resize if needed
+            window.addEventListener('resize', () => {
+                initialTransform = getComputedStyle(donationCard).transform;
+                 if (initialTransform === 'none') initialTransform = '';
+            });
+        }
+
+
+        // 2. Layered 3D Tilt for Payment Method Cards
+        if (window.matchMedia('(pointer: fine)').matches) {
+            tiltCards.forEach(card => {
+                const icon = card.querySelector('[data-tilt-icon]');
+                const content = card.querySelector('[data-tilt-content]');
+                let initialCardTransform = getComputedStyle(card).transform;
+                if(initialCardTransform === 'none') initialCardTransform = '';
+                let initialIconTransform = icon ? getComputedStyle(icon).transform : '';
+                if(initialIconTransform === 'none') initialIconTransform = '';
+                let initialContentTransform = content ? getComputedStyle(content).transform : '';
+                if(initialContentTransform === 'none') initialContentTransform = '';
+
+
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+
+                    const baseRotateY = (x / (rect.width / 2)) * parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--card-tilt-intensity').replace('deg','').trim());
+                    const baseRotateX = -(y / (rect.height / 2)) * parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--card-tilt-intensity').replace('deg','').trim());
+                    
+                    // The main card hover transform is mostly handled by CSS :hover for simplicity and performance
+                    // JS is now more for the parallax of inner elements
+
+                    requestAnimationFrame(() => {
+                        if (icon) {
+                            icon.style.transform = `translateZ(8px) rotateX(${baseRotateX * cardIconParallax}deg) rotateY(${baseRotateY * cardIconParallax}deg) scale(1.12) rotate(-7deg)`;
+                        }
+                        if (content) { 
+                            content.style.transform = `translateZ(4px) rotateX(${baseRotateX * cardTextParallax}deg) rotateY(${baseRotateY * cardTextParallax}deg)`;
+                        }
+                    });
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    requestAnimationFrame(() => {
+                        // Rely on CSS :hover to take back control for the main card transform
+                        if (icon) icon.style.transform = initialIconTransform; // Revert to original or CSS hover state for icon
+                        if (content) content.style.transform = initialContentTransform; // Revert for content
+                    });
+                });
+
+                window.addEventListener('resize', () => {
+                    initialCardTransform = getComputedStyle(card).transform;
+                    if(initialCardTransform === 'none') initialCardTransform = '';
+                    initialIconTransform = icon ? getComputedStyle(icon).transform : '';
+                    if(initialIconTransform === 'none') initialIconTransform = '';
+                    initialContentTransform = content ? getComputedStyle(content).transform : '';
+                    if(initialContentTransform === 'none') initialContentTransform = '';
+                });
+            });
+        }
+
+
+        // 3. Magnetic Buttons Effect (Simplified to work with CSS hover transforms)
+        if (window.matchMedia('(pointer: fine)').matches) {
+            magneticButtons.forEach(button => {
+                const strength = 20; // Reduced strength
+                let baseTransform = ''; // Will store the :hover or .copied transform
+
+                button.addEventListener('mousemove', (e) => {
+                    if (button.classList.contains('copied')) {
+                        baseTransform = 'translateY(0px) scale(1)';
+                    } else {
+                        baseTransform = 'translateY(-3px) scale(1.06)'; // From :hover
+                    }
+                    
+                    const rect = button.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+
+                    const magX = (x / rect.width) * strength;
+                    const magY = (y / rect.height) * strength;
+
+                    requestAnimationFrame(() => {
+                        // Combine magnetic pull with the current base transform (hover or copied)
+                        // This requires parsing the baseTransform or applying transforms separately
+                        // Simpler: just add magnetic pull to the visual effect.
+                        // This might override part of the CSS scale/translate if not careful.
+                        // For now, let's assume magnetic pull adds to current state if hovered.
+                        if (button.matches(':hover') || button.classList.contains('copied')) {
+                             button.style.transform = `translateX(${magX}px) translateY(${magY - (button.classList.contains('copied') ? 0 : 3) }px) scale(${button.classList.contains('copied') ? 1 : 1.06})`;
+                        }
+                    });
+                });
+
+                button.addEventListener('mouseleave', () => {
+                    requestAnimationFrame(() => {
+                         if (button.classList.contains('copied')) {
+                            button.style.transform = 'translateY(0px) scale(1)';
+                        } else if (button.matches(':hover')) { // Should not happen on mouseleave, but good check
+                            button.style.transform = 'translateY(-3px) scale(1.06)';
+                        } else {
+                            button.style.transform = ''; // Revert to non-hovered state
+                        }
+                    });
+                });
+            });
+        }
+
+
+        // 4. Staggered Animation for Payment Methods
+        paymentMethods.forEach((method, index) => {
+            method.style.animationDelay = `${1 + index * 0.1}s`; // Slightly faster stagger
+        });
+
+        // 5. Copy Button Functionality
         document.querySelectorAll('.copy-btn').forEach(button => {
             button.addEventListener('click', () => {
                 const targetId = button.dataset.clipboardTarget;
@@ -236,19 +458,38 @@
                             const originalText = button.innerText;
                             button.innerText = 'Tersalin!';
                             button.classList.add('copied');
+                            if (button.hasAttribute('data-magnetic-button')) { 
+                                button.style.transform = 'translateY(0px) scale(1)'; // Ensure correct copied transform
+                            }
                             
                             setTimeout(() => {
                                 button.innerText = originalText;
                                 button.classList.remove('copied');
-                            }, 2000); // Kembali ke teks awal setelah 2 detik
+                                if (button.matches(':hover') && button.hasAttribute('data-magnetic-button')) {
+                                     button.style.transform = 'translateY(-3px) scale(1.06)'; // Re-apply hover
+                                } else if (button.hasAttribute('data-magnetic-button')) {
+                                    button.style.transform = ''; // Clear magnetic if not hovered
+                                }
+                            }, 1800);
                         })
                         .catch(err => {
-                            console.error('Gagal menyalin: ', err);
+                            console.error('Gagal menyalin (navigator): ', err);
                             alert('Gagal menyalin. Mohon salin secara manual.');
                         });
                 }
             });
         });
+        
+        // CSS.registerProperty for smoother custom property transitions (optional enhancement)
+        if (window.CSS && CSS.registerProperty) {
+            const tryRegister = (name, syntax, initialValue) => {
+                try { CSS.registerProperty({ name, syntax, inherits: false, initialValue }); }
+                catch (e) { console.warn(`CSS.registerProperty failed for ${name}:`, e); }
+            };
+            tryRegister('--card-dynamic-rotateX', '<angle>', '0deg');
+            tryRegister('--card-dynamic-rotateY', '<angle>', '0deg');
+        }
+    });
     </script>
 
 </body>

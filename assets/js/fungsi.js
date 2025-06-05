@@ -1,1 +1,640 @@
-const _0x12706c=_0x5f43;(function(_0x11f4b1,_0x3f14a0){const _0x505343=_0x5f43,_0x202160=_0x11f4b1();while(!![]){try{const _0x219952=parseInt(_0x505343(0x188))/0x1*(-parseInt(_0x505343(0x268))/0x2)+-parseInt(_0x505343(0x1dd))/0x3+parseInt(_0x505343(0x1ce))/0x4*(-parseInt(_0x505343(0x24b))/0x5)+parseInt(_0x505343(0x1c6))/0x6*(-parseInt(_0x505343(0x1f1))/0x7)+-parseInt(_0x505343(0x1ca))/0x8+-parseInt(_0x505343(0x186))/0x9+-parseInt(_0x505343(0x194))/0xa*(-parseInt(_0x505343(0x206))/0xb);if(_0x219952===_0x3f14a0)break;else _0x202160['push'](_0x202160['shift']());}catch(_0x3d1be6){_0x202160['push'](_0x202160['shift']());}}}(_0x5adf,0x9c5c0),document[_0x12706c(0x21c)](_0x12706c(0x185),()=>{const _0x5b9977=_0x12706c,_0x5b2c92=document[_0x5b9977(0x1de)](_0x5b9977(0x1fb)),_0x1b384b=document[_0x5b9977(0x1de)](_0x5b9977(0x23f)),_0x592191=document['getElementById'](_0x5b9977(0x234)),_0xdfa11d=document[_0x5b9977(0x1de)](_0x5b9977(0x1bd)),_0x58757b=document[_0x5b9977(0x1de)](_0x5b9977(0x276)),_0x126379=document[_0x5b9977(0x1de)](_0x5b9977(0x1e3)),_0x9fcaad=document['getElementById'](_0x5b9977(0x1bf)),_0x3da069=document[_0x5b9977(0x1de)](_0x5b9977(0x1cc)),_0x3ba465=document[_0x5b9977(0x1de)](_0x5b9977(0x274)),_0x285bb4=document['getElementById']('sidebar-backdrop'),_0x18950a=document[_0x5b9977(0x1de)](_0x5b9977(0x273)),_0x55056c=document[_0x5b9977(0x1de)](_0x5b9977(0x178)),_0x333330=document['getElementById'](_0x5b9977(0x1c8)),_0x3c3090=document[_0x5b9977(0x1de)]('file-preview-area');let _0x52c64d=null;const _0x391845=[_0x5b9977(0x1fd),_0x5b9977(0x1ab),_0x5b9977(0x1e2)];function _0x5aab56(){const _0x30c13e=_0x5b9977;if(_0x391845[_0x30c13e(0x1f0)]===0x0)return null;const _0x34ff74=Math['floor'](Math[_0x30c13e(0x1b5)]()*_0x391845[_0x30c13e(0x1f0)]);return _0x391845[_0x34ff74];}const _0x3ab132=_0x5b9977(0x226),_0x512262=_0x5b9977(0x1be),_0xa25268=_0x5b9977(0x26e),_0x50f1c0=_0x5b9977(0x1f5),_0x5cb692='Halo!\x20Saya\x20Arasya.\x20Ada\x20yang\x20bisa\x20saya\x20bantu\x20hari\x20ini?';function _0x3e899a(){const _0x4f01a0=_0x5b9977;if(_0x9fcaad&&_0x3da069)_0x9fcaad[_0x4f01a0(0x242)][_0x4f01a0(0x211)](_0x4f01a0(0x255));}function _0x3589d4(){const _0x42844f=_0x5b9977;if(_0x9fcaad&&_0x3da069)_0x9fcaad[_0x42844f(0x242)][_0x42844f(0x18e)]('sidebar-open');}if(_0x3ba465)_0x3ba465[_0x5b9977(0x21c)](_0x5b9977(0x1d8),_0x3e899a);if(_0x285bb4)_0x285bb4[_0x5b9977(0x21c)]('click',_0x3589d4);if(_0x18950a)_0x18950a['addEventListener'](_0x5b9977(0x1d8),_0x3589d4);function _0x5c5dcd(){const _0x312514=_0x5b9977,_0x2cf876=new Date(),_0x3f2e13=_0x2cf876['toLocaleTimeString'](_0x312514(0x26c),{'hour':'2-digit','minute':'2-digit'}),_0x2e5c34=_0x2cf876[_0x312514(0x1f2)](_0x312514(0x26c),{'weekday':_0x312514(0x279),'day':_0x312514(0x210),'month':_0x312514(0x279),'year':'numeric'});return'Kamu\x20adalah\x20Arasya,\x20seorang\x20asisten\x20AI\x20multimodal\x20yang\x20ramah,\x20sopan,\x20dan\x20sangat\x20membantu.\x20Saat\x20ini\x20adalah\x20'+_0x2e5c34+',\x20pukul\x20'+_0x3f2e13+_0x312514(0x27b);}let _0x23deaf=[];function _0x30735(){const _0x425b1e=_0x5b9977;if(_0x58757b)_0x58757b[_0x425b1e(0x242)][_0x425b1e(0x211)](_0x425b1e(0x22d));_0x126379&&(_0x126379[_0x425b1e(0x242)][_0x425b1e(0x211)](_0x425b1e(0x246)),_0x126379[_0x425b1e(0x1a7)][_0x425b1e(0x19f)]=_0x425b1e(0x220));}function _0x140f48(){const _0x10b80d=_0x5b9977;if(_0x58757b)_0x58757b[_0x10b80d(0x242)][_0x10b80d(0x18e)]('hidden');_0x126379&&(_0x126379[_0x10b80d(0x242)]['remove'](_0x10b80d(0x246)),_0x126379[_0x10b80d(0x1a7)][_0x10b80d(0x19f)]='none'),_0x5b4d1e();}function _0x5637af(_0x245358,_0x557f41,_0x3140be=_0x5b9977(0x1e8),_0x15839d=![]){const _0x5dcc16=_0x5b9977;_0x30735();const _0x92f2ed=document[_0x5dcc16(0x1d3)](_0x5dcc16(0x1a8));_0x92f2ed['classList'][_0x5dcc16(0x211)](_0x5dcc16(0x1d4),_0x557f41+_0x5dcc16(0x1d5));if(_0x557f41===_0x5dcc16(0x275)&&(_0x3140be==='data'||_0x3140be===_0x5dcc16(0x1f3))){_0x92f2ed['classList'][_0x5dcc16(0x211)](_0x5dcc16(0x235));if(_0x3140be===_0x5dcc16(0x1f3))_0x92f2ed[_0x5dcc16(0x242)][_0x5dcc16(0x211)](_0x5dcc16(0x1f3));}const _0x2b61f0=document['createElement']('div');_0x2b61f0['className']='message-content-container';let _0x3800f9='';if(typeof _0x245358===_0x5dcc16(0x24a)&&_0x245358[_0x5dcc16(0x1c3)]){if(_0x245358[_0x5dcc16(0x26d)]){const _0x1d4852=document['createElement']('p');_0x1d4852[_0x5dcc16(0x18c)]=_0x245358[_0x5dcc16(0x26d)],_0x2b61f0[_0x5dcc16(0x253)](_0x1d4852),_0x3800f9=_0x245358[_0x5dcc16(0x26d)];}const _0x4114a2=document[_0x5dcc16(0x1d3)](_0x5dcc16(0x26f));_0x4114a2[_0x5dcc16(0x230)]=_0x245358[_0x5dcc16(0x1c3)],_0x4114a2['alt']=_0x245358['text']||_0x5dcc16(0x252),_0x2b61f0['appendChild'](_0x4114a2);if(!_0x3800f9&&_0x245358[_0x5dcc16(0x26d)])_0x3800f9=_0x245358[_0x5dcc16(0x26d)];else{if(!_0x3800f9)_0x3800f9='Gambar';}}else{const _0x136a58=document['createElement']('p');_0x3800f9=_0x245358;if(_0x15839d&&_0x557f41===_0x5dcc16(0x275)){let _0x30a44b=_0x245358;_0x30a44b=_0x30a44b[_0x5dcc16(0x227)](/```(\w*)\n([\s\S]*?)\n```/g,(_0x2e03f0,_0x26953d,_0xc562fb)=>{const _0x179cb7=_0x5dcc16,_0x1f942b='code-'+Date[_0x179cb7(0x1d6)]()+'-'+Math[_0x179cb7(0x1b5)]()[_0x179cb7(0x1f6)](0x24)[_0x179cb7(0x22e)](0x2,0x7),_0x4a6955=_0x26953d?'language-'+_0x26953d[_0x179cb7(0x201)]():'',_0x1b9ff6=_0xc562fb;return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22code-block-wrapper\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22copy-code-btn\x22\x20data-clipboard-target=\x22#'+_0x1f942b+_0x179cb7(0x240)+_0x1f942b+_0x179cb7(0x23d)+_0x4a6955+'\x22>'+_0x1b9ff6[_0x179cb7(0x227)](/</g,'<')[_0x179cb7(0x227)](/>/g,'>')+_0x179cb7(0x195);}),_0x30a44b=_0x30a44b[_0x5dcc16(0x227)](/\n/g,_0x5dcc16(0x1cd)),_0x30a44b=_0x30a44b[_0x5dcc16(0x227)](/\*\*(.*?)\*\*/g,_0x5dcc16(0x1ee)),_0x30a44b=_0x30a44b['replace'](/\*(.*?)\*/g,_0x5dcc16(0x23e)),_0x30a44b=_0x30a44b[_0x5dcc16(0x227)](/!\[(.*?)\]\((.*?)\)/g,(_0x4086f2,_0x330117,_0xbfaa2d)=>{const _0x5d75f8=_0x5dcc16;if(_0x4086f2['includes'](_0x5d75f8(0x17f)))return _0x4086f2;return _0x5d75f8(0x191)+_0xbfaa2d+_0x5d75f8(0x21e)+(_0x330117||_0x5d75f8(0x262))+_0x5d75f8(0x1ae);}),_0x30a44b=_0x30a44b[_0x5dcc16(0x227)](/\[(.*?)\]\((.*?)\)/g,(_0x3881b7,_0x2cbd9d,_0x5ed990)=>{const _0x4f507c=_0x5dcc16;if(_0x3881b7[_0x4f507c(0x23b)](_0x4f507c(0x17f)))return _0x3881b7;return _0x4f507c(0x1d2)+_0x5ed990+_0x4f507c(0x1c9)+_0x2cbd9d+_0x4f507c(0x20a);}),_0x136a58['innerHTML']=_0x30a44b;}else _0x136a58['textContent']=_0x245358;_0x2b61f0[_0x5dcc16(0x253)](_0x136a58);}_0x92f2ed[_0x5dcc16(0x253)](_0x2b61f0);if(_0x3800f9&&typeof _0x3800f9===_0x5dcc16(0x260)&&_0x3800f9[_0x5dcc16(0x27e)]()!==''){const _0x5f2aa6=document[_0x5dcc16(0x1d3)](_0x5dcc16(0x24d));_0x5f2aa6[_0x5dcc16(0x261)]=_0x5dcc16(0x1f7),_0x5f2aa6[_0x5dcc16(0x26a)]=_0x5dcc16(0x1a1),_0x5f2aa6['title']=_0x5dcc16(0x1cb),_0x5f2aa6['addEventListener'](_0x5dcc16(0x1d8),_0x4665e6=>{const _0x2662f1=_0x5dcc16;_0x4665e6['stopPropagation'](),navigator[_0x2662f1(0x263)]['writeText'](_0x3800f9[_0x2662f1(0x227)](/<br\s*\/?>/gi,'\x0a')[_0x2662f1(0x227)](/<[^>]+>/g,''))[_0x2662f1(0x216)](()=>{_0x5f2aa6['innerHTML']='<i\x20class=\x22fas\x20fa-check\x22></i>',setTimeout(()=>{const _0x5439ad=_0x5f43;_0x5f2aa6['innerHTML']=_0x5439ad(0x1a1);},0x5dc);})[_0x2662f1(0x1e5)](_0x17cb13=>console[_0x2662f1(0x1f3)](_0x2662f1(0x19b),_0x17cb13));}),_0x92f2ed[_0x5dcc16(0x253)](_0x5f2aa6);}return _0x5b2c92[_0x5dcc16(0x253)](_0x92f2ed),_0x92f2ed[_0x5dcc16(0x22a)](_0x5dcc16(0x266))[_0x5dcc16(0x1b0)](_0x595e10=>{const _0xead812=_0x5dcc16;_0x595e10['addEventListener'](_0xead812(0x1d8),_0x22d954=>{const _0x576022=_0xead812;_0x22d954[_0x576022(0x1e1)]();const _0x3481c6=_0x595e10[_0x576022(0x198)](_0x576022(0x207)),_0x294b45=document[_0x576022(0x197)](_0x3481c6);_0x294b45&&navigator[_0x576022(0x263)][_0x576022(0x280)](_0x294b45[_0x576022(0x18c)])[_0x576022(0x216)](()=>{const _0x133307=_0x576022;_0x595e10['innerHTML']=_0x133307(0x1d7),setTimeout(()=>{const _0x2791d9=_0x133307;_0x595e10['innerHTML']=_0x2791d9(0x1da);},0x7d0);})[_0x576022(0x1e5)](_0x3d7b95=>{const _0x298786=_0x576022;console[_0x298786(0x1f3)](_0x298786(0x1e6),_0x3d7b95),_0x595e10[_0x298786(0x18c)]=_0x298786(0x21f),setTimeout(()=>{_0x595e10['innerHTML']='<i\x20class=\x22fas\x20fa-copy\x22></i>\x20Salin';},0x7d0);});});}),_0x5b2c92[_0x5dcc16(0x1ed)]=_0x5b2c92[_0x5dcc16(0x1fa)],_0x92f2ed;}function _0x4ae816(){const _0x42c742=_0x5b9977;_0x5b2c92[_0x42c742(0x26a)]='',_0x23deaf=[],_0x1b384b[_0x42c742(0x1b8)]='',_0x1b384b['focus'](),_0x3589d4(),console[_0x42c742(0x271)](_0x42c742(0x250)),_0x2072b4(!![]);}_0x55056c[_0x5b9977(0x21c)](_0x5b9977(0x1d8),()=>{const _0x3a0c36=_0x5b9977;_0x333330[_0x3a0c36(0x1d8)]();}),_0x333330[_0x5b9977(0x21c)](_0x5b9977(0x17b),_0x970778=>{const _0x422903=_0x5b9977,_0x530b7f=_0x970778[_0x422903(0x17d)]['files'][0x0];_0x530b7f&&(_0x52c64d=_0x530b7f,_0x1c624d(_0x530b7f)),_0x333330[_0x422903(0x1b8)]=null;});function _0x1c624d(_0x919771){const _0x53f434=_0x5b9977,_0x2fc016=document['querySelector'](_0x53f434(0x184));_0x3c3090['innerHTML']='',_0x3c3090[_0x53f434(0x1a7)]['display']=_0x53f434(0x25e);!_0x2fc016['contains'](_0x3c3090)&&_0x2fc016['insertBefore'](_0x3c3090,_0x2fc016[_0x53f434(0x217)]);const _0x3ba22a=document[_0x53f434(0x1d3)](_0x53f434(0x1a8));_0x3ba22a['className']='file-preview-container';if(_0x919771[_0x53f434(0x248)]['startsWith'](_0x53f434(0x24c))){const _0x9d1f5d=new FileReader();_0x9d1f5d[_0x53f434(0x243)]=_0x547703=>{const _0x482a1d=_0x53f434,_0x1db9ce=document[_0x482a1d(0x1d3)](_0x482a1d(0x26f));_0x1db9ce[_0x482a1d(0x230)]=_0x547703['target'][_0x482a1d(0x1e4)],_0x3ba22a[_0x482a1d(0x253)](_0x1db9ce);},_0x9d1f5d[_0x53f434(0x1a2)](_0x919771);}else{const _0x3516f1=document[_0x53f434(0x1d3)]('i');_0x3516f1[_0x53f434(0x261)]=_0x53f434(0x1df),_0x3516f1['style']['marginRight']=_0x53f434(0x258),_0x3ba22a[_0x53f434(0x253)](_0x3516f1);}const _0x5ace19=document['createElement'](_0x53f434(0x189));_0x5ace19[_0x53f434(0x18c)]=_0x919771[_0x53f434(0x222)],_0x3ba22a[_0x53f434(0x253)](_0x5ace19);const _0x591a27=document[_0x53f434(0x1d3)](_0x53f434(0x24d));_0x591a27['innerHTML']='×',_0x591a27['title']=_0x53f434(0x1e7),_0x591a27['onclick']=_0x5b4d1e,_0x3ba22a[_0x53f434(0x253)](_0x591a27),_0x3c3090['appendChild'](_0x3ba22a);}function _0x5b4d1e(){const _0x5c12c7=_0x5b9977;_0x52c64d=null,_0x3c3090['innerHTML']='',_0x3c3090[_0x5c12c7(0x1a7)]['display']=_0x5c12c7(0x249);}async function _0x415344(_0x5a643f){return new Promise((_0x278f3f,_0xe57ddc)=>{const _0x52625c=_0x5f43,_0x3f7c5e=new FileReader();_0x3f7c5e[_0x52625c(0x243)]=()=>{const _0x2be1f3=_0x52625c,_0x3011bd=_0x3f7c5e['result'][_0x2be1f3(0x18a)](',')[0x1];_0x278f3f(_0x3011bd);},_0x3f7c5e['onerror']=_0xd0d279=>_0xe57ddc(_0xd0d279),_0x3f7c5e[_0x52625c(0x1a2)](_0x5a643f);});}async function _0x356505(_0x303171,_0x104f26){const _0x3db016=_0x5b9977,_0xc4a72d=_0x5637af(_0x3db016(0x1ac)+_0x104f26+'...',_0x3db016(0x275),_0x3db016(0x1db));_0xc4a72d[_0x3db016(0x242)][_0x3db016(0x211)](_0x3db016(0x193));try{const _0x55e030=await fetch(_0x303171);if(_0xc4a72d[_0x3db016(0x223)])_0x5b2c92[_0x3db016(0x1bb)](_0xc4a72d);if(!_0x55e030['ok']){let _0x52b900=_0x3db016(0x190)+_0x55e030[_0x3db016(0x18f)];try{const _0x3130b3=await _0x55e030['json']();if(_0x3130b3[_0x3db016(0x1d4)])_0x52b900+=_0x3db016(0x1ef)+_0x3130b3[_0x3db016(0x1d4)];}catch(_0x5afa33){}return _0x5637af(_0x3db016(0x1c0)+_0x104f26+'.\x20'+_0x52b900,'bot',_0x3db016(0x1f3)),null;}const _0x531353=await _0x55e030[_0x3db016(0x22c)]();if(_0x531353[_0x3db016(0x264)]===!![]&&_0x531353[_0x3db016(0x1db)])return _0x531353[_0x3db016(0x1db)];else{if(_0x531353[_0x3db016(0x18f)]===!![]&&_0x531353[_0x3db016(0x1db)]){if(_0x104f26===_0x3db016(0x1f4)&&Array['isArray'](_0x531353[_0x3db016(0x1db)]))return _0x531353[_0x3db016(0x1db)];if(_0x104f26===_0x3db016(0x1a9)&&typeof _0x531353[_0x3db016(0x1db)]===_0x3db016(0x24a)&&_0x531353['data']['auto'])return _0x531353[_0x3db016(0x1db)];return _0x531353[_0x3db016(0x1db)];}else{if(_0x531353[_0x3db016(0x264)]===!![]||_0x531353['status']===!![])return _0x531353;}}return _0x5637af(_0x3db016(0x17a)+_0x104f26+_0x3db016(0x254),_0x3db016(0x275),_0x3db016(0x1f3)),console[_0x3db016(0x214)](_0x3db016(0x1b9)+_0x104f26+':',_0x531353),null;}catch(_0x4fae3e){return _0xc4a72d['parentNode']&&_0xc4a72d['parentNode']===_0x5b2c92&&_0x5b2c92['removeChild'](_0xc4a72d),_0x5637af(_0x3db016(0x19c)+_0x104f26+':\x20'+_0x4fae3e[_0x3db016(0x1d4)],'bot',_0x3db016(0x1f3)),console[_0x3db016(0x1f3)](_0x3db016(0x24e)+_0x104f26+':',_0x4fae3e),null;}}async function _0x57988e(){const _0x88b68d=_0x5b9977,_0x46a890=await _0x356505(_0x512262,_0x88b68d(0x1a9));if(_0x46a890&&_0x46a890['auto']?.[_0x88b68d(0x1fe)]?.[_0x88b68d(0x231)]){const _0x59b155=_0x46a890['auto'][_0x88b68d(0x1fe)]['gempa'];let _0x4a35f6='**Informasi\x20Gempa\x20Otomatis\x20Terkini\x20dari\x20BMKG:**\x0a';_0x4a35f6+='Tanggal:\x20'+(_0x59b155['Tanggal']||_0x88b68d(0x19e))+_0x88b68d(0x20b)+(_0x59b155[_0x88b68d(0x1d0)]||_0x88b68d(0x19e))+_0x88b68d(0x20e)+(_0x59b155['Magnitude']||_0x88b68d(0x19e))+_0x88b68d(0x1f9)+(_0x59b155[_0x88b68d(0x272)]||_0x88b68d(0x19e))+_0x88b68d(0x21b)+(_0x59b155[_0x88b68d(0x25f)]||_0x88b68d(0x19e))+'\x0a';if(_0x59b155[_0x88b68d(0x192)])_0x4a35f6+=_0x88b68d(0x259)+_0x59b155[_0x88b68d(0x192)]+'\x0a';if(_0x59b155[_0x88b68d(0x1cf)])_0x4a35f6+=_0x88b68d(0x213)+_0x59b155[_0x88b68d(0x1cf)]+'\x0a';if(_0x59b155[_0x88b68d(0x245)]){const _0x5c1dc3=_0x88b68d(0x209);_0x4a35f6+='[Peta\x20Guncangan]('+_0x5c1dc3+_0x59b155['Shakemap']+')\x0a';}_0x5637af(_0x4a35f6,_0x88b68d(0x275),'data',!![]),_0x23deaf[_0x88b68d(0x20d)]({'role':_0x88b68d(0x256),'parts':[{'text':_0x88b68d(0x25c)}]});if(_0x46a890[_0x88b68d(0x199)]?.[_0x88b68d(0x1fe)]?.[_0x88b68d(0x231)]&&Array[_0x88b68d(0x1d1)](_0x46a890['terkini'][_0x88b68d(0x1fe)]['gempa'])){let _0x2726c8=_0x88b68d(0x1b6);_0x46a890['terkini'][_0x88b68d(0x1fe)]['gempa']['slice'](0x0,0x3)['forEach']((_0x370a32,_0xc17245)=>{const _0x34dd0f=_0x88b68d;_0x2726c8+=_0xc17245+0x1+'.\x20'+_0x370a32['Tanggal']+',\x20'+_0x370a32[_0x34dd0f(0x1d0)]+_0x34dd0f(0x187)+_0x370a32[_0x34dd0f(0x181)]+_0x34dd0f(0x241)+_0x370a32[_0x34dd0f(0x25f)]+'\x0a';}),_0x5637af(_0x2726c8,'bot','data',!![]);}}else{_0x5637af(_0x88b68d(0x218),_0x88b68d(0x275),_0x88b68d(0x1f3));if(_0x46a890)console[_0x88b68d(0x271)](_0x88b68d(0x239),_0x46a890);}}async function _0x182cca(){const _0x2095f8=_0x5b9977,_0x229629=await _0x356505(_0xa25268,_0x2095f8(0x1f4));if(_0x229629?.['length']>0x0){let _0x110b72='**Berita\x20Terbaru\x20dari\x20Antara\x20News:**\x0a\x0a';_0x229629[_0x2095f8(0x19a)](0x0,0x5)[_0x2095f8(0x1b0)]((_0x50a584,_0x2ca4ef)=>{const _0x2f4e64=_0x2095f8;_0x110b72+=_0x2ca4ef+0x1+'.\x20**'+_0x50a584[_0x2f4e64(0x21d)]+_0x2f4e64(0x1c4);if(_0x50a584[_0x2f4e64(0x23a)])_0x110b72+='\x20\x20\x20*Kategori:\x20'+_0x50a584[_0x2f4e64(0x23a)]+'*\x0a';if(_0x50a584[_0x2f4e64(0x1c7)])_0x110b72+=_0x2f4e64(0x23c)+_0x50a584['link']+')\x0a';_0x110b72+='\x0a';}),_0x5637af(_0x110b72,_0x2095f8(0x275),_0x2095f8(0x1db),!![]),_0x23deaf['push']({'role':'model','parts':[{'text':'Saya\x20telah\x20memberikan\x20beberapa\x20berita\x20terbaru\x20dari\x20Antara.'}]});}else{_0x5637af('Tidak\x20ditemukan\x20berita\x20dari\x20Antara\x20News\x20saat\x20ini\x20atau\x20formatnya\x20tidak\x20sesuai.',_0x2095f8(0x275),'error');if(_0x229629)console[_0x2095f8(0x271)](_0x2095f8(0x1b1),_0x229629);}}async function _0x4596f1(_0x1ed14c){const _0x27dcaf=_0x5b9977,_0x1f7dd9=''+_0x50f1c0+encodeURIComponent(_0x1ed14c),_0x164a79=await _0x356505(_0x1f7dd9,'TikTok\x20Content\x20Downloader');if(_0x164a79&&_0x164a79[_0x27dcaf(0x20c)]){let _0x22a87a='',_0x249b2f=![];_0x164a79['metadata']&&(_0x164a79['metadata'][_0x27dcaf(0x21d)]&&_0x164a79[_0x27dcaf(0x236)]['title']['trim']()!==''&&(_0x22a87a+=_0x27dcaf(0x27f)+_0x164a79['metadata'][_0x27dcaf(0x21d)]+'\x0a'),_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x183)]&&_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x183)][_0x27dcaf(0x27e)]()!==''&&(_0x22a87a+=_0x27dcaf(0x229)+_0x164a79['metadata'][_0x27dcaf(0x183)]+'\x0a'),_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x200)]&&(_0x22a87a+=_0x27dcaf(0x247)+(_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x200)]['likeCount']||0x0)+_0x27dcaf(0x27a)+(_0x164a79[_0x27dcaf(0x236)]['stats'][_0x27dcaf(0x1c1)]||0x0)+_0x27dcaf(0x1d9)+(_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x200)][_0x27dcaf(0x219)]||0x0)+_0x27dcaf(0x1dc)+(_0x164a79[_0x27dcaf(0x236)]['stats'][_0x27dcaf(0x196)]||0x0)+'\x0a'),_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x251)]&&_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x251)]['length']>0x0&&(_0x22a87a+='Hashtags:\x20'+_0x164a79[_0x27dcaf(0x236)][_0x27dcaf(0x251)][_0x27dcaf(0x1af)](',\x20')+'\x0a'),_0x22a87a+='\x0a');if(_0x164a79[_0x27dcaf(0x20c)]['video']&&Array['isArray'](_0x164a79['download'][_0x27dcaf(0x17c)])&&_0x164a79['download'][_0x27dcaf(0x17c)]['length']>0x0)_0x22a87a=_0x27dcaf(0x1eb)+_0x22a87a,_0x22a87a+='**Tautan\x20Unduhan\x20Video:**\x0a',_0x164a79[_0x27dcaf(0x20c)][_0x27dcaf(0x17c)][_0x27dcaf(0x1b0)]((_0x18152c,_0x511694)=>{const _0x28eccd=_0x27dcaf;_0x22a87a+=_0x511694+0x1+_0x28eccd(0x1a4)+(_0x511694+0x1)+_0x28eccd(0x182)+_0x18152c+')\x0a';}),_0x249b2f=!![];else _0x164a79[_0x27dcaf(0x20c)][_0x27dcaf(0x204)]&&Array['isArray'](_0x164a79[_0x27dcaf(0x20c)][_0x27dcaf(0x204)])&&_0x164a79['download'][_0x27dcaf(0x204)][_0x27dcaf(0x1f0)]>0x0&&(_0x22a87a=_0x27dcaf(0x1aa)+_0x22a87a,_0x22a87a+=_0x27dcaf(0x17e),_0x164a79[_0x27dcaf(0x20c)][_0x27dcaf(0x204)]['forEach']((_0x1d6c51,_0x51adf8)=>{const _0x494300=_0x27dcaf;_0x22a87a+=_0x51adf8+0x1+_0x494300(0x215)+(_0x51adf8+0x1)+']('+_0x1d6c51+')\x0a';}),_0x249b2f=!![]);_0x164a79[_0x27dcaf(0x20c)][_0x27dcaf(0x25a)]&&_0x249b2f&&(_0x22a87a+=_0x27dcaf(0x233),_0x22a87a+=_0x27dcaf(0x1fc)+_0x164a79[_0x27dcaf(0x20c)]['audio']+')\x0a');if(_0x249b2f)_0x5637af(_0x22a87a,_0x27dcaf(0x275),_0x27dcaf(0x1db),!![]),_0x23deaf[_0x27dcaf(0x20d)]({'role':_0x27dcaf(0x256),'parts':[{'text':_0x27dcaf(0x221)}]});else{let _0x2a1071='Maaf,\x20tidak\x20ada\x20video\x20atau\x20foto\x20yang\x20ditemukan\x20untuk\x20tautan\x20TikTok\x20ini.';_0x164a79&&typeof _0x164a79===_0x27dcaf(0x24a)&&_0x164a79[_0x27dcaf(0x1d4)]&&(_0x2a1071+=_0x27dcaf(0x1b4)+_0x164a79[_0x27dcaf(0x1d4)]),_0x5637af(_0x2a1071,'bot','error'),console[_0x27dcaf(0x214)](_0x27dcaf(0x228),_0x164a79);}}else{let _0x27f000='Maaf,\x20gagal\x20mendapatkan\x20tautan\x20unduhan\x20konten\x20TikTok.';if(_0x164a79&&typeof _0x164a79===_0x27dcaf(0x24a)&&_0x164a79[_0x27dcaf(0x1d4)])_0x27f000+=_0x27dcaf(0x1b4)+_0x164a79[_0x27dcaf(0x1d4)];else _0x164a79===null?_0x27f000=_0x27dcaf(0x25b):(_0x27f000+=_0x27dcaf(0x1b2),console[_0x27dcaf(0x214)]('Struktur\x20data\x20TikTok\x20yang\x20diterima\x20(setelah\x20parsing):',_0x164a79));_0x5637af(_0x27f000,_0x27dcaf(0x275),'error');}}async function _0x2072b4(_0xd22697=![]){const _0x1fcdd2=_0x5b9977;if(_0x23deaf[_0x1fcdd2(0x1f0)]===0x0&&!_0xd22697){_0x140f48();return;}const _0x32b3f6=_0x5aab56();if(!_0x32b3f6){console[_0x1fcdd2(0x1f3)](_0x1fcdd2(0x203)),_0x5637af(_0x1fcdd2(0x1c5),'bot',_0x1fcdd2(0x1f3));return;}const _0x2f3cb4=_0x1fcdd2(0x21a)+_0x3ab132+_0x1fcdd2(0x269)+_0x32b3f6,_0x4f9bfb=_0x5637af(_0x1fcdd2(0x257),_0x1fcdd2(0x275));_0x4f9bfb[_0x1fcdd2(0x242)][_0x1fcdd2(0x211)]('typing');const _0x172e4b=_0x5c5dcd();let _0xc9c784=[..._0x23deaf];if(_0xd22697){if(_0x4f9bfb[_0x1fcdd2(0x223)])_0x5b2c92['removeChild'](_0x4f9bfb);_0x5637af(_0x5cb692,_0x1fcdd2(0x275),_0x1fcdd2(0x1e8),!![]),_0x23deaf['push']({'role':'model','parts':[{'text':_0x5cb692}]});return;}const _0x562a9c={'contents':_0xc9c784,'systemInstruction':{'parts':[{'text':_0x172e4b}]},'generationConfig':{'temperature':0.7,'maxOutputTokens':0x800}};try{const _0x307e21=await fetch(_0x2f3cb4,{'method':'POST','headers':{'Content-Type':_0x1fcdd2(0x27d)},'body':JSON[_0x1fcdd2(0x1a3)](_0x562a9c)});if(_0x4f9bfb[_0x1fcdd2(0x223)])_0x5b2c92[_0x1fcdd2(0x1bb)](_0x4f9bfb);if(!_0x307e21['ok']){const _0x4a6a77=await _0x307e21[_0x1fcdd2(0x22c)]()[_0x1fcdd2(0x1e5)](()=>null);let _0x2892ff=_0x1fcdd2(0x18b)+_0x307e21['status']+'\x20'+_0x307e21[_0x1fcdd2(0x26b)];if(_0x4a6a77?.[_0x1fcdd2(0x1f3)]?.[_0x1fcdd2(0x1d4)])_0x2892ff+=_0x1fcdd2(0x241)+_0x4a6a77[_0x1fcdd2(0x1f3)]['message'];console[_0x1fcdd2(0x1f3)](_0x1fcdd2(0x1c2),_0x4a6a77||_0x2892ff),_0x5637af('Maaf,\x20Arasya\x20sedang\x20mengalami\x20kendala:\x20'+_0x2892ff,_0x1fcdd2(0x275),_0x1fcdd2(0x1f3));return;}const _0x236b46=await _0x307e21[_0x1fcdd2(0x22c)]();if(_0x236b46[_0x1fcdd2(0x1bc)]?.[0x0]?.[_0x1fcdd2(0x1e0)]?.[_0x1fcdd2(0x1f8)]?.[0x0]?.[_0x1fcdd2(0x26d)]){const _0x42ade6=_0x236b46[_0x1fcdd2(0x1bc)][0x0][_0x1fcdd2(0x1e0)]['parts'][0x0][_0x1fcdd2(0x26d)];_0x5637af(_0x42ade6,_0x1fcdd2(0x275),'chat',!![]),_0x23deaf['push']({'role':_0x1fcdd2(0x256),'parts':[{'text':_0x42ade6}]});}else _0x236b46[_0x1fcdd2(0x20f)]?.[_0x1fcdd2(0x19d)]?_0x5637af(_0x1fcdd2(0x1ba)+_0x236b46[_0x1fcdd2(0x20f)][_0x1fcdd2(0x19d)]+'.',_0x1fcdd2(0x275),_0x1fcdd2(0x1f3)):(console[_0x1fcdd2(0x1f3)](_0x1fcdd2(0x22f),_0x236b46),_0x5637af(_0x1fcdd2(0x179),_0x1fcdd2(0x275),_0x1fcdd2(0x1f3)));}catch(_0x243ab5){if(_0x4f9bfb[_0x1fcdd2(0x223)])_0x5b2c92['removeChild'](_0x4f9bfb);console[_0x1fcdd2(0x1f3)]('Fetch\x20Gemini\x20Error:',_0x243ab5),_0x5637af(_0x1fcdd2(0x270)+_0x243ab5[_0x1fcdd2(0x1d4)],_0x1fcdd2(0x275),_0x1fcdd2(0x1f3));}}async function _0xa68b79(){const _0x1a6030=_0x5b9977,_0x21c313=_0x1b384b[_0x1a6030(0x1b8)][_0x1a6030(0x27e)]();if(!_0x21c313&&!_0x52c64d)return;_0x30735();let _0x29a63d=[],_0x383882=_0x21c313,_0x2ee812=!!_0x52c64d;if(_0x52c64d)try{const _0x3fc7e0=await _0x415344(_0x52c64d);_0x29a63d[_0x1a6030(0x20d)]({'inlineData':{'mimeType':_0x52c64d[_0x1a6030(0x248)],'data':_0x3fc7e0}}),_0x52c64d[_0x1a6030(0x248)][_0x1a6030(0x1ec)](_0x1a6030(0x24c))?_0x383882={'text':_0x21c313,'imageUrl':URL[_0x1a6030(0x277)](_0x52c64d)}:_0x383882=_0x21c313?_0x21c313+_0x1a6030(0x1a5)+_0x52c64d[_0x1a6030(0x222)]+')':_0x1a6030(0x1a6)+_0x52c64d['name']+')';}catch(_0x181f5c){console[_0x1a6030(0x1f3)](_0x1a6030(0x237),_0x181f5c),_0x5637af(_0x1a6030(0x1a0),'bot',_0x1a6030(0x1f3)),_0x5b4d1e();return;}_0x21c313&&_0x29a63d[_0x1a6030(0x20d)]({'text':_0x21c313});_0x29a63d['length']>0x0&&(_0x5637af(_0x383882,_0x1a6030(0x278)),_0x23deaf['push']({'role':_0x1a6030(0x278),'parts':_0x29a63d}));_0x1b384b[_0x1a6030(0x1b8)]='',_0x5b4d1e();const _0x2fbe3a=_0x21c313['toLowerCase'](),_0x3f4276=_0x21c313[_0x1a6030(0x25d)](/https?:\/\/(?:www\.|vm\.|vt\.)?tiktok\.com\/[\w\/@\-\?\=\&\%\;\.]+/i);let _0x17731a=![];if(!_0x2ee812){if(_0x3f4276){const _0x496acd=_0x3f4276[0x0];await _0x4596f1(_0x496acd),_0x17731a=!![];}else{if(_0x2fbe3a[_0x1a6030(0x23b)](_0x1a6030(0x231))||_0x2fbe3a[_0x1a6030(0x23b)](_0x1a6030(0x1b7)))await _0x57988e(),_0x17731a=!![];else(_0x2fbe3a[_0x1a6030(0x23b)](_0x1a6030(0x267))||_0x2fbe3a[_0x1a6030(0x23b)](_0x1a6030(0x1ad)))&&(await _0x182cca(),_0x17731a=!![]);}}!_0x17731a&&_0x29a63d[_0x1a6030(0x1f0)]>0x0&&await _0x2072b4(),_0x3589d4();}_0xdfa11d[_0x5b9977(0x21c)](_0x5b9977(0x1d8),()=>{_0x4ae816();}),_0x592191[_0x5b9977(0x21c)](_0x5b9977(0x1d8),_0xa68b79),_0x1b384b[_0x5b9977(0x21c)](_0x5b9977(0x24f),_0x3e4365=>{const _0x3df213=_0x5b9977;_0x3e4365[_0x3df213(0x22b)]===_0x3df213(0x232)&&!_0x3e4365[_0x3df213(0x1ff)]&&(_0x3e4365[_0x3df213(0x180)](),_0xa68b79());});const _0x184eff=_0x391845&&_0x391845['length']>0x0&&_0x391845[_0x5b9977(0x208)](_0x44fce2=>_0x44fce2&&!_0x44fce2[_0x5b9977(0x23b)]('Ganti\x20dengan\x20API\x20Key\x20Anda')&&_0x44fce2[_0x5b9977(0x1f0)]>0x14);if(!_0x184eff){console[_0x5b9977(0x214)](_0x5b9977(0x1ea));const _0x4b65be=document[_0x5b9977(0x1d3)](_0x5b9977(0x1a8));_0x4b65be[_0x5b9977(0x18c)]=_0x5b9977(0x1e9),_0x4b65be[_0x5b9977(0x1a7)][_0x5b9977(0x1b3)]=_0x5b9977(0x244),_0x4b65be[_0x5b9977(0x1a7)][_0x5b9977(0x202)]='white',_0x4b65be[_0x5b9977(0x1a7)]['textAlign']=_0x5b9977(0x224),_0x4b65be['style']['padding']=_0x5b9977(0x18d),_0x4b65be[_0x5b9977(0x1a7)]['position']=_0x5b9977(0x225),_0x4b65be['style']['bottom']='0',_0x4b65be['style'][_0x5b9977(0x212)]='0',_0x4b65be[_0x5b9977(0x1a7)]['width']='100%',_0x4b65be[_0x5b9977(0x1a7)]['zIndex']=_0x5b9977(0x238),document[_0x5b9977(0x265)][_0x5b9977(0x253)](_0x4b65be),_0x592191[_0x5b9977(0x27c)]=!![],_0x1b384b[_0x5b9977(0x205)]='Fitur\x20AI\x20tidak\x20aktif\x20karena\x20API\x20Key\x20bermasalah.',_0x1b384b[_0x5b9977(0x27c)]=!![];}_0x23deaf[_0x5b9977(0x1f0)]===0x0&&_0x140f48(),_0x4ae816();}));function _0x5f43(_0x391552,_0x256e2a){const _0x5adf8a=_0x5adf();return _0x5f43=function(_0x5f4301,_0x3a2bc7){_0x5f4301=_0x5f4301-0x178;let _0x58a137=_0x5adf8a[_0x5f4301];return _0x58a137;},_0x5f43(_0x391552,_0x256e2a);}function _0x5adf(){const _0x1b0a23=['Tidak\x20ada\x20API\x20Key\x20Gemini\x20yang\x20valid\x20tersedia.','photo','placeholder','43222553VkfFlL','data-clipboard-target','every','https://data.bmkg.go.id/DataMKG/TEWS/','</a>','\x0aJam:\x20','download','push','\x0aMagnitude:\x20','promptFeedback','numeric','add','left','Dirasakan:\x20','warn','.\x20[Unduh\x20Foto\x20','then','firstChild','Tidak\x20ditemukan\x20data\x20gempa\x20dari\x20BMKG\x20saat\x20ini\x20atau\x20formatnya\x20tidak\x20sesuai.','commentCount','https://generativelanguage.googleapis.com/v1beta/models/','\x0aWilayah:\x20','addEventListener','title','\x22\x20alt=\x22','Gagal!','flex','Saya\x20telah\x20memberikan\x20tautan\x20unduhan\x20untuk\x20konten\x20TikTok.','name','parentNode','center','fixed','gemini-1.5-flash-latest','replace','Struktur\x20data\x20TikTok\x20yang\x20diterima\x20tidak\x20mengandung\x20video\x20atau\x20foto\x20yang\x20valid:','Deskripsi:\x20','querySelectorAll','key','json','hidden','substring','Unexpected\x20Gemini\x20API\x20response:','src','gempa','Enter','\x0a**Tautan\x20Unduhan\x20Audio\x20(MP3):**\x0a','send-button','data-message','metadata','Error\x20reading\x20file:','2000','Struktur\x20data\x20BMKG\x20yang\x20diterima\x20(setelah\x20parsing):','category','includes','\x20\x20\x20[Baca\x20selengkapnya](','\x22\x20class=\x22','<em>$1</em>','message-input','\x22\x20title=\x22Salin\x20kode\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fas\x20fa-copy\x22></i>\x20Salin\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<pre><code\x20id=\x22','\x20-\x20','classList','onload','red','Shakemap','active','Suka:\x20','type','none','object','110VSiquI','image/','button','Error\x20fetching\x20','keypress','New\x20chat\x20started.','hashtags','Gambar\x20dari\x20pengguna','appendChild','\x20tidak\x20dikenali\x20atau\x20tidak\x20berhasil.','sidebar-open','model','Arasya\x20sedang\x20berpikir...','8px','Potensi:\x20','audio','Tidak\x20dapat\x20menghubungi\x20layanan\x20unduh\x20TikTok\x20saat\x20ini.','Saya\x20telah\x20memberikan\x20informasi\x20gempa\x20otomatis\x20terkini.','match','block','Wilayah','string','className','Gambar\x20dari\x20Arasya','clipboard','success','body','.copy-code-btn','berita','2RlosLc',':generateContent?key=','innerHTML','statusText','id-ID','text','https://api.siputzx.my.id/api/berita/antara','img','Masalah\x20koneksi\x20dengan\x20Arasya:\x20','log','Kedalaman','sidebar-close-btn','hamburger-menu','bot','welcome-screen','createObjectURL','user','long',',\x20Putar/Lihat:\x20','\x20WIB.\x20Kamu\x20bertugas\x20untuk\x20menjawab\x20pertanyaan\x20pengguna\x20dengan\x20jelas,\x20memberikan\x20informasi\x20yang\x20akurat,\x20dan\x20dapat\x20menganalisis\x20gambar\x20serta\x20dokumen\x20(seperti\x20PDF,\x20TXT,\x20DOC/DOCX)\x20yang\x20dikirimkan\x20pengguna.\x20Selalu\x20gunakan\x20bahasa\x20Indonesia\x20yang\x20baik\x20dan\x20benar.\x20Jika\x20kamu\x20tidak\x20tahu\x20jawabannya,\x20katakan\x20terus\x20terang.\x20Kamu\x20juga\x20bisa\x20memberikan\x20informasi\x20gempa\x20terkini\x20dari\x20BMKG,\x20berita\x20terbaru\x20dari\x20Antara,\x20dan\x20jika\x20pengguna\x20mengirimkan\x20tautan\x20TikTok\x20(video\x20atau\x20slideshow\x20foto),\x20kamu\x20dapat\x20membantu\x20mencarikan\x20tautan\x20unduhannya.\x20Jika\x20responsmu\x20mengandung\x20URL\x20gambar,\x20formatlah\x20sebagai\x20Markdown:\x20![deskripsi\x20singkat](URL_gambar).\x20Jika\x20kamu\x20diminta\x20untuk\x20memberikan\x20kode,\x20format\x20kode\x20tersebut\x20menggunakan\x20triple\x20backticks,\x20contoh:\x20```python\x0aprint(\x22Hello,\x20World!\x22)\x0a```.\x20Jangan\x20lupa\x20untuk\x20menyertakan\x20penentu\x20bahasa\x20jika\x20memungkinkan.','disabled','application/json','trim','Judul:\x20','writeText','attach-file-button','Maaf,\x20Arasya\x20tidak\x20memberikan\x20respons\x20yang\x20valid.','Format\x20respons\x20dari\x20','change','video','target','**Tautan\x20Unduhan\x20Foto:**\x0a','class=\x22code-block-wrapper\x22','preventDefault','Magnitude',')](','description','.main-chat-input-area','DOMContentLoaded','7316172hVezXM','\x20-\x20Mag:\x20','627843JcKZzo','span','split','Error:\x20','textContent','10px','remove','status','Status:\x20','<img\x20src=\x22','Potensi','typing','10tyEgcf','</code></pre>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','shareCount','querySelector','getAttribute','terkini','slice','Gagal\x20menyalin\x20pesan:','Terjadi\x20kesalahan\x20saat\x20menghubungi\x20','blockReason','N/A','display','Gagal\x20memproses\x20file.\x20Silakan\x20coba\x20lagi.','<i\x20class=\x22fas\x20fa-copy\x22></i>','readAsDataURL','stringify','.\x20[Unduh\x20Video\x20(Opsi\x20','\x20(File:\x20','(File:\x20','style','div','BMKG','**Slideshow\x20Foto\x20TikTok\x20Ditemukan!**\x0a\x0a','AIzaSyBYhjv1GNQ_3FUcxuUNlo3CooST0omKT2w','Arasya\x20sedang\x20mengambil\x20data\x20','antara','\x22\x20style=\x22max-width:100%;\x20border-radius:8px;\x20margin-top:5px;\x22>','join','forEach','Respons\x20Antara\x20News\x20(setelah\x20parsing):','\x20Format\x20respons\x20tidak\x20sesuai.','backgroundColor','\x20Pesan\x20dari\x20API:\x20','random','\x0a**Daftar\x20Gempa\x20Terkini\x20(M\x20>=\x205.0)\x20Lainnya:**\x0a','bmkg','value','Unknown\x20or\x20unsuccessful\x20response\x20structure\x20from\x20','Permintaan\x20Anda\x20tidak\x20dapat\x20diproses\x20oleh\x20Arasya\x20karena:\x20','removeChild','candidates','new-chat-button-sidebar','https://api.siputzx.my.id/api/info/bmkg','app-container','Maaf,\x20gagal\x20mengambil\x20data\x20dari\x20','playCount','Gemini\x20API\x20Error:','imageUrl','**\x0a','Maaf,\x20Arasya\x20tidak\x20dapat\x20dihubungi\x20saat\x20ini\x20karena\x20masalah\x20konfigurasi\x20API\x20Key.','159582iZQzkx','link','file-input','\x22\x20target=\x22_blank\x22\x20rel=\x22noopener\x20noreferrer\x22>','7157528dQASUX','Salin\x20pesan','sidebar','<br>','12532Omqtlt','Dirasakan','Jam','isArray','<a\x20href=\x22','createElement','message','-message','now','<i\x20class=\x22fas\x20fa-check\x22></i>\x20Disalin!','click',',\x20Komentar:\x20','<i\x20class=\x22fas\x20fa-copy\x22></i>\x20Salin','data',',\x20Bagikan:\x20','2254566xiHtjm','getElementById','fas\x20fa-file-alt','content','stopPropagation','AIzaSyAeV4ZL9VA8QzqRTfmpmOPyEu5f_2BXjcY','chat-window-container','result','catch','Gagal\x20menyalin\x20kode:','Hapus\x20file','chat','PERHATIAN:\x20API\x20Key\x20untuk\x20Gemini\x20belum\x20diatur\x20dengan\x20benar.\x20Fitur\x20AI\x20mungkin\x20tidak\x20berfungsi.','Satu\x20atau\x20lebih\x20API\x20Key\x20belum\x20diatur\x20dengan\x20benar\x20atau\x20array\x20API\x20Key\x20kosong!','**Video\x20TikTok\x20Ditemukan!**\x0a\x0a','startsWith','scrollTop','<strong>$1</strong>','\x20-\x20Pesan:\x20','length','35PftPPr','toLocaleDateString','error','Berita\x20Antara','https://api.siputzx.my.id/api/tiktok/v2?url=','toString','copy-message-btn','parts','\x0aKedalaman:\x20','scrollHeight','chat-window','[Unduh\x20Audio](','AIzaSyAGTJ--r0XhqEln8O89HblRkNnyLxwYnsk','Infogempa','shiftKey','stats','toLowerCase','color'];_0x5adf=function(){return _0x1b0a23;};return _0x5adf();}
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const chatWindow = document.getElementById('chat-window');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const newChatButton = document.getElementById('new-chat-button-sidebar');
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const chatWindowContainer = document.getElementById('chat-window-container');
+
+        const appContainer = document.getElementById('app-container');
+        const sidebar = document.getElementById('sidebar');
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const sidebarBackdrop = document.getElementById('sidebar-backdrop');
+        const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
+
+        const attachFileButton = document.getElementById('attach-file-button');
+        const fileInput = document.getElementById('file-input');
+        const filePreviewArea = document.getElementById('file-preview-area');
+        let attachedFile = null;
+        
+        // --- GANTI DENGAN API KEY ANDA ---
+        const GEMINI_API_KEYS = [
+            'AIzaSyAGTJ--r0XhqEln8O89HblRkNnyLxwYnsk', // Ganti dengan API Key Anda
+            'AIzaSyBYhjv1GNQ_3FUcxuUNlo3CooST0omKT2w', // Ganti dengan API Key Anda
+            'AIzaSyAeV4ZL9VA8QzqRTfmpmOPyEu5f_2BXjcY'  // Ganti dengan API Key Anda
+        ];
+        
+        function getRandomApiKey() {
+            if (GEMINI_API_KEYS.length === 0) return null;
+            const randomIndex = Math.floor(Math.random() * GEMINI_API_KEYS.length);
+            return GEMINI_API_KEYS[randomIndex];
+        }
+        
+        const GEMINI_MODEL_NAME = 'gemini-1.5-flash-latest';
+        const BMKG_API_URL = 'https://api.siputzx.my.id/api/info/bmkg';
+        const ANTARA_NEWS_API_URL = 'https://api.siputzx.my.id/api/berita/antara';
+        const TIKTOK_DOWNLOAD_API_BASE_URL = 'https://api.siputzx.my.id/api/tiktok/v2?url=';
+        const INITIAL_BOT_GREETING = "Halo! Saya Aira. Ada yang bisa saya bantu hari ini?";
+
+        function openSidebar() {
+            if (appContainer && sidebar) appContainer.classList.add('sidebar-open');
+        }
+        function closeSidebar() {
+            if (appContainer && sidebar) appContainer.classList.remove('sidebar-open');
+        }
+
+        if (hamburgerMenu) hamburgerMenu.addEventListener('click', openSidebar);
+        if (sidebarBackdrop) sidebarBackdrop.addEventListener('click', closeSidebar);
+        if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeSidebar);
+        
+        // Auto-adjust textarea height
+        if (messageInput) {
+            messageInput.addEventListener('input', () => {
+                messageInput.style.height = 'auto'; // Reset height
+                let newHeight = messageInput.scrollHeight;
+                const maxHeight = parseInt(window.getComputedStyle(messageInput).maxHeight); // Get max-height from CSS
+                if (newHeight > maxHeight) {
+                    newHeight = maxHeight;
+                }
+                messageInput.style.height = newHeight + 'px';
+            });
+        }
+
+
+        function getSystemInstructionText() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+            const dateString = now.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+            return `Kamu adalah AIRA ( Arasya Intelligent Response Assistant ), pencipta kamu adalah Arasya, seorang asisten AI multimodal yang ramah, sopan, dan sangat membantu. Saat ini adalah ${dateString}, pukul ${timeString} WIB. Kamu bertugas untuk menjawab pertanyaan pengguna dengan jelas, memberikan informasi yang akurat, dan dapat menganalisis gambar serta dokumen (seperti PDF, TXT, DOC/DOCX) yang dikirimkan pengguna. Selalu gunakan bahasa Indonesia yang baik dan benar. Jika kamu tidak tahu jawabannya, katakan terus terang. Kamu juga bisa memberikan informasi gempa terkini dari BMKG, berita terbaru dari Antara, dan jika pengguna mengirimkan tautan TikTok (video atau slideshow foto), kamu dapat membantu mencarikan tautan unduhannya. Jika responsmu mengandung URL gambar, formatlah sebagai Markdown: ![deskripsi singkat](URL_gambar). Jika kamu diminta untuk memberikan kode, format kode tersebut menggunakan triple backticks, contoh: \`\`\`python\nprint("Hello, World!")\n\`\`\`. Jangan lupa untuk menyertakan penentu bahasa jika memungkinkan.`;
+        }
+
+        let conversationHistory = [];
+
+        function showChatView() {
+            if (welcomeScreen) welcomeScreen.classList.add('hidden');
+            if (chatWindowContainer) {
+                 chatWindowContainer.classList.add('active');
+                 // chatWindowContainer.style.display = 'flex'; // Ini sudah dihandle oleh class 'active'
+            }
+        }
+
+        function showWelcomeView() {
+            if (welcomeScreen) welcomeScreen.classList.remove('hidden');
+            if (chatWindowContainer) {
+                chatWindowContainer.classList.remove('active');
+                // chatWindowContainer.style.display = 'none'; // Ini sudah dihandle oleh class 'active'
+            }
+            clearFilePreview();
+        }
+        
+        function addMessage(content, sender, type = 'chat', isMarkdown = false) {
+            showChatView();
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', `${sender}-message`);
+            if (sender === 'bot' && (type === 'data' || type === 'error')) {
+                messageElement.classList.add('data-message');
+                 if (type === 'error') messageElement.classList.add('error');
+            }
+
+            const messageContentContainer = document.createElement('div');
+            messageContentContainer.className = 'message-content-container';
+
+            let textToCopy = '';
+
+            if (typeof content === 'object' && content.imageUrl) {
+                if (content.text) {
+                    const textParagraph = document.createElement('p');
+                    textParagraph.textContent = content.text;
+                    messageContentContainer.appendChild(textParagraph);
+                    textToCopy = content.text;
+                }
+                const imgElement = document.createElement('img');
+                imgElement.src = content.imageUrl;
+                imgElement.alt = content.text || "Gambar dari pengguna";
+                messageContentContainer.appendChild(imgElement);
+                if (!textToCopy && content.text) textToCopy = content.text; 
+                else if (!textToCopy) textToCopy = "Gambar";
+            } else { 
+                const paragraph = document.createElement('p');
+                textToCopy = content; 
+                
+                if (isMarkdown && sender === 'bot') {
+                    let htmlContent = content;
+
+                    // Escape HTML entities in code blocks first to prevent them from being parsed as HTML
+                    htmlContent = htmlContent.replace(/```(\w*)\n([\s\S]*?)\n```/g, (match, lang, code) => {
+                        const codeId = `code-${Date.now()}-${Math.random().toString(36).substring(2,7)}`;
+                        const languageClass = lang ? `language-${lang.toLowerCase()}` : '';
+                        // Basic sanitization for code content (escape < and >)
+                        const sanitizedCode = code.replace(/&/g, '&').replace(/</g, '<').replace(/>/g, '>');
+                        return `
+                            <div class="code-block-wrapper">
+                                <button class="copy-code-btn" data-clipboard-target="#${codeId}" title="Salin kode">
+                                    <i class="fas fa-copy"></i> Salin
+                                </button>
+                                <pre><code id="${codeId}" class="${languageClass}">${sanitizedCode}</code></pre>
+                            </div>
+                        `;
+                    });
+                    
+                    // Convert newlines to <br> AFTER code block processing
+                    htmlContent = htmlContent.replace(/\n/g, '<br>'); 
+                    // Handle bold and italics
+                    htmlContent = htmlContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); 
+                    htmlContent = htmlContent.replace(/\*(.*?)\*/g, '<em>$1</em>'); 
+                    // Handle Markdown images (ensure it doesn't re-process things inside code blocks by checking for specific class)
+                    htmlContent = htmlContent.replace(/!\[(.*?)\]\((.*?)\)(?![^<]*<\/code>)/g, (match, alt, url) => {
+                        return `<img src="${url}" alt="${alt || 'Gambar dari AIRA'}" style="max-width:100%; border-radius:8px; margin-top:5px;">`;
+                    });
+                    // Handle Markdown links (ensure it doesn't re-process things inside code blocks)
+                    htmlContent = htmlContent.replace(/\[(.*?)\]\((.*?)\)(?![^<]*<\/code>)/g, (match, text, url) => {
+                        return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+                    });
+
+                    paragraph.innerHTML = htmlContent;
+                } else {
+                    paragraph.textContent = content;
+                }
+                messageContentContainer.appendChild(paragraph);
+            }
+            
+            messageElement.appendChild(messageContentContainer);
+
+            if (textToCopy && typeof textToCopy === 'string' && textToCopy.trim() !== '') {
+                const copyBtn = document.createElement('button');
+                copyBtn.className = 'copy-message-btn';
+                copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+                copyBtn.title = 'Salin pesan';
+                copyBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    // Strip HTML for copying, then convert <br> back to newlines
+                    const plainText = textToCopy.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '');
+                    navigator.clipboard.writeText(plainText) 
+                        .then(() => {
+                            copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                            setTimeout(() => { copyBtn.innerHTML = '<i class="fas fa-copy"></i>'; }, 1500);
+                        })
+                        .catch(err => console.error('Gagal menyalin pesan:', err));
+                });
+                messageElement.appendChild(copyBtn);
+            }
+            
+            chatWindow.appendChild(messageElement);
+
+            messageElement.querySelectorAll('.copy-code-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const codeElementId = button.getAttribute('data-clipboard-target');
+                    const codeElement = document.querySelector(codeElementId);
+                    if (codeElement) {
+                        navigator.clipboard.writeText(codeElement.textContent) // Use textContent for pre/code
+                            .then(() => {
+                                button.innerHTML = '<i class="fas fa-check"></i> Disalin!';
+                                setTimeout(() => { button.innerHTML = '<i class="fas fa-copy"></i> Salin'; }, 2000);
+                            })
+                            .catch(err => {
+                                console.error('Gagal menyalin kode:', err);
+                                button.textContent = 'Gagal!';
+                                setTimeout(() => { button.innerHTML = '<i class="fas fa-copy"></i> Salin'; }, 2000);
+                            });
+                    }
+                });
+            });
+
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+            return messageElement;
+        }
+
+        function startNewChat() {
+            chatWindow.innerHTML = '';
+            conversationHistory = [];
+            messageInput.value = '';
+            messageInput.style.height = 'auto'; // Reset textarea height
+            messageInput.focus();
+            closeSidebar(); // Close sidebar on new chat, especially useful on mobile
+            getGeminiResponse(true); 
+        }
+
+        attachFileButton.addEventListener('click', () => {
+            fileInput.click(); 
+        });
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                attachedFile = file;
+                displayFilePreview(file);
+            }
+            fileInput.value = null; 
+        });
+
+        function displayFilePreview(file) {
+            // const mainChatInputArea = document.querySelector('.main-chat-input-area'); // Not needed here
+            filePreviewArea.innerHTML = ''; 
+            filePreviewArea.style.display = 'block'; 
+            
+            // No longer inserting into mainChatInputArea, it's a sibling now.
+            
+            const previewContainer = document.createElement('div');
+            previewContainer.className = 'file-preview-container';
+
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    previewContainer.appendChild(img);
+                }
+                reader.readAsDataURL(file);
+            } else {
+                const icon = document.createElement('i');
+                icon.className = 'fas fa-file-alt'; 
+                icon.style.marginRight = '8px';
+                previewContainer.appendChild(icon);
+            }
+
+            const fileNameSpan = document.createElement('span');
+            fileNameSpan.textContent = file.name;
+            previewContainer.appendChild(fileNameSpan);
+
+            const removeButton = document.createElement('button');
+            removeButton.innerHTML = '×';
+            removeButton.title = 'Hapus file';
+            removeButton.onclick = clearFilePreview;
+            previewContainer.appendChild(removeButton);
+            
+            filePreviewArea.appendChild(previewContainer);
+        }
+
+        function clearFilePreview() {
+            attachedFile = null;
+            filePreviewArea.innerHTML = '';
+            filePreviewArea.style.display = 'none';
+        }
+
+        async function readFileAsBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const base64String = reader.result.split(',')[1];
+                    resolve(base64String);
+                };
+                reader.onerror = (error) => reject(error);
+                reader.readAsDataURL(file);
+            });
+        }
+
+        async function fetchExternalAPI(url, serviceName) {
+            const typingIndicator = addMessage(`Aku sedang mengambil data ${serviceName}...`, "bot", "data");
+            typingIndicator.classList.add("typing");
+            try {
+                const response = await fetch(url);
+                 if (typingIndicator.parentNode && typingIndicator.parentNode === chatWindow) { // Check parentNode before removing
+                    chatWindow.removeChild(typingIndicator);
+                }
+
+                if (!response.ok) {
+                    let errorDetail = `Status: ${response.status}`;
+                    try {
+                        const errorJson = await response.json();
+                        if (errorJson.message) errorDetail += ` - Pesan: ${errorJson.message}`;
+                    } catch (e) { /* ignore if error response is not json */ }
+                    addMessage(`Maaf, gagal mengambil data dari ${serviceName}. ${errorDetail}`, "bot", "error");
+                    return null;
+                }
+
+                const apiResponse = await response.json();
+
+                if (apiResponse.success === true && apiResponse.data) {
+                    return apiResponse.data;
+                } else if (apiResponse.status === true && apiResponse.data) {
+                    if (serviceName === "Berita Antara" && Array.isArray(apiResponse.data)) return apiResponse.data;
+                    if (serviceName === "BMKG" && typeof apiResponse.data === 'object' && apiResponse.data.auto) return apiResponse.data; // BMKG auto might be nested
+                     return apiResponse.data;
+                } else if (apiResponse.success === true || apiResponse.status === true) { // if success is true but no 'data'
+                     return apiResponse; 
+                }
+                
+                addMessage(`Format respons dari ${serviceName} tidak dikenali atau tidak berhasil.`, "bot", "error");
+                console.warn(`Unknown or unsuccessful response structure from ${serviceName}:`, apiResponse);
+                return null;
+
+            } catch (error) {
+                 if (typingIndicator.parentNode && typingIndicator.parentNode === chatWindow) {
+                     chatWindow.removeChild(typingIndicator);
+                 }
+                addMessage(`Terjadi kesalahan saat menghubungi ${serviceName}: ${error.message}`, "bot", "error");
+                console.error(`Error fetching ${serviceName}:`, error);
+                return null;
+            }
+        }
+
+        async function handleBMKGRequest() { 
+            const bmkgData = await fetchExternalAPI(BMKG_API_URL, "BMKG");
+            if (bmkgData && bmkgData.auto?.Infogempa?.gempa) {
+                const gempaInfo = bmkgData.auto.Infogempa.gempa;
+                let bmkgMessage = `**Informasi Gempa Otomatis Terkini dari BMKG:**\n`;
+                bmkgMessage += `Tanggal: ${gempaInfo.Tanggal || 'N/A'}\nJam: ${gempaInfo.Jam || 'N/A'}\nMagnitude: ${gempaInfo.Magnitude || 'N/A'}\nKedalaman: ${gempaInfo.Kedalaman || 'N/A'}\nWilayah: ${gempaInfo.Wilayah || 'N/A'}\n`;
+                if (gempaInfo.Potensi) bmkgMessage += `Potensi: ${gempaInfo.Potensi}\n`;
+                if (gempaInfo.Dirasakan) bmkgMessage += `Dirasakan: ${gempaInfo.Dirasakan}\n`;
+                if (gempaInfo.Shakemap) {
+                    const shakemapBaseUrl = "https://data.bmkg.go.id/DataMKG/TEWS/";
+                    bmkgMessage += `[Peta Guncangan](${shakemapBaseUrl}${gempaInfo.Shakemap})\n`;
+                }
+                addMessage(bmkgMessage, 'bot', 'data', true);
+                conversationHistory.push({ role: 'model', parts: [{ text: `Saya telah memberikan informasi gempa otomatis terkini.` }] });
+                
+                // Check for 'terkini' gempa list (M>=5)
+                if (bmkgData.terkini?.Infogempa?.gempa && Array.isArray(bmkgData.terkini.Infogempa.gempa)) {
+                    let terkiniMessage = "\n**Daftar Gempa Terkini (M >= 5.0) Lainnya:**\n";
+                    bmkgData.terkini.Infogempa.gempa.slice(0, 3).forEach((g, index) => { // Show top 3
+                        terkiniMessage += `${index + 1}. ${g.Tanggal}, ${g.Jam} - Mag: ${g.Magnitude} - ${g.Wilayah}\n`;
+                    });
+                    addMessage(terkiniMessage, 'bot', 'data', true);
+                }
+
+            } else {
+                addMessage("Tidak ditemukan data gempa dari BMKG saat ini atau formatnya tidak sesuai.", "bot", "error");
+                if (bmkgData) console.log("Struktur data BMKG yang diterima (setelah parsing):", bmkgData);
+            }
+        }
+
+        async function handleAntaraNewsRequest() {
+            const newsArray = await fetchExternalAPI(ANTARA_NEWS_API_URL, "Berita Antara");
+            if (newsArray?.length > 0) {
+                let newsMessage = "**Berita Terbaru dari Antara News:**\n\n";
+                newsArray.slice(0, 5).forEach((item, index) => {
+                    newsMessage += `${index + 1}. **${item.title}**\n`;
+                    if (item.category) newsMessage += `   *Kategori: ${item.category}*\n`;
+                    if (item.link) newsMessage += `   [Baca selengkapnya](${item.link})\n`;
+                    newsMessage += "\n";
+                });
+                addMessage(newsMessage, 'bot', 'data', true);
+                conversationHistory.push({ role: 'model', parts: [{ text: `Saya telah memberikan beberapa berita terbaru dari Antara.` }] });
+            } else {
+                addMessage("Tidak ditemukan berita dari Antara News saat ini atau formatnya tidak sesuai.", "bot", "error");
+                if (newsArray) console.log("Respons Antara News (setelah parsing):", newsArray);
+            }
+        }
+
+        async function handleTikTokDownloadRequest(tiktokUrl) {
+            const fullApiUrl = `${TIKTOK_DOWNLOAD_API_BASE_URL}${encodeURIComponent(tiktokUrl)}`;
+            const tiktokData = await fetchExternalAPI(fullApiUrl, "TikTok Content Downloader");
+
+            if (tiktokData && tiktokData.download) {
+                let contentMessage = "";
+                let foundMedia = false;
+
+                if (tiktokData.metadata) {
+                    if (tiktokData.metadata.title && tiktokData.metadata.title.trim() !== "") {
+                        contentMessage += `Judul: ${tiktokData.metadata.title}\n`;
+                    }
+                    if (tiktokData.metadata.description && tiktokData.metadata.description.trim() !== "") {
+                        contentMessage += `Deskripsi: ${tiktokData.metadata.description}\n`;
+                    }
+                    if (tiktokData.metadata.stats) {
+                        contentMessage += `Suka: ${tiktokData.metadata.stats.likeCount || 0}, Putar/Lihat: ${tiktokData.metadata.stats.playCount || 0}, Komentar: ${tiktokData.metadata.stats.commentCount || 0}, Bagikan: ${tiktokData.metadata.stats.shareCount || 0}\n`;
+                    }
+                    if (tiktokData.metadata.hashtags && tiktokData.metadata.hashtags.length > 0) {
+                        contentMessage += `Hashtags: ${tiktokData.metadata.hashtags.join(', ')}\n`;
+                    }
+                    contentMessage += "\n"; 
+                }
+
+                if (tiktokData.download.video && Array.isArray(tiktokData.download.video) && tiktokData.download.video.length > 0) {
+                    contentMessage = `**Video TikTok Ditemukan!**\n\n` + contentMessage; 
+                    contentMessage += `**Download Dibawah:**\n`;
+                    tiktokData.download.video.forEach((videoLink, index) => {
+                        contentMessage += `${index + 1}. [Unduh Video (Opsi ${index + 1})](${videoLink})\n`;
+                    });
+                    foundMedia = true;
+                }
+                else if (tiktokData.download.photo && Array.isArray(tiktokData.download.photo) && tiktokData.download.photo.length > 0) {
+                    contentMessage = `**Slideshow Foto TikTok Ditemukan!**\n\n` + contentMessage; 
+                    contentMessage += `**Download Dibawah:**\n`;
+                    tiktokData.download.photo.forEach((photoLink, index) => {
+                        contentMessage += `${index + 1}. [Unduh Foto ${index + 1}](${photoLink})\n`;
+                    });
+                    foundMedia = true;
+                }
+
+                if (tiktokData.download.audio && foundMedia) { 
+                    contentMessage += `\n**Tautan Unduhan Audio (MP3):**\n`;
+                    contentMessage += `[Unduh Audio](${tiktokData.download.audio})\n`;
+                }
+
+                if (foundMedia) {
+                    addMessage(contentMessage, 'bot', 'data', true);
+                    conversationHistory.push({ role: 'model', parts: [{ text: `Saya telah memberikan tautan unduhan untuk konten TikTok.` }] });
+                } else {
+                    let errorMessage = "Maaf, tidak ada video atau foto yang ditemukan untuk tautan TikTok ini.";
+                    if (tiktokData && typeof tiktokData === 'object' && tiktokData.message) {
+                        errorMessage += ` Pesan dari API: ${tiktokData.message}`;
+                    }
+                    addMessage(errorMessage, "bot", "error");
+                    console.warn("Struktur data TikTok yang diterima tidak mengandung video atau foto yang valid:", tiktokData);
+                }
+            } else { 
+                let errorMessage = "Maaf, gagal mendapatkan tautan unduhan konten TikTok.";
+                if (tiktokData && typeof tiktokData === 'object' && tiktokData.message) {
+                    errorMessage += ` Pesan dari API: ${tiktokData.message}`;
+                } else if (tiktokData === null) { // If fetchExternalAPI returned null due to network or other fetch error
+                    errorMessage = "Tidak dapat menghubungi layanan unduh TikTok saat ini.";
+                } else {
+                    errorMessage += " Format respons tidak sesuai.";
+                    console.warn("Struktur data TikTok yang diterima (setelah parsing):", tiktokData);
+                }
+                addMessage(errorMessage, "bot", "error");
+            }
+        }
+
+        async function getGeminiResponse(isInitialGreeting = false) {
+            if (conversationHistory.length === 0 && !isInitialGreeting) {
+                showWelcomeView(); // Revert to welcome if history is empty and not initial call
+                return;
+            }
+
+            const currentApiKey = getRandomApiKey();
+            if (!currentApiKey) {
+                console.error("Tidak ada API Key Gemini yang valid tersedia.");
+                addMessage("Maaf, Aira tidak dapat dihubungi saat ini karena masalah konfigurasi API Key.", 'bot', 'error');
+                return;
+            }
+            const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL_NAME}:generateContent?key=${currentApiKey}`;
+
+            const typingIndicator = addMessage("Mengetik...", "bot");
+            typingIndicator.classList.add("typing");
+            const currentSystemInstruction = getSystemInstructionText();
+            
+            let currentConversationPayload = [...conversationHistory]; // Use a copy
+            
+            if (isInitialGreeting) { // Special handling for initial greeting
+                 if (typingIndicator.parentNode) chatWindow.removeChild(typingIndicator); // Remove typing before adding greeting
+                addMessage(INITIAL_BOT_GREETING, 'bot', 'chat', true);
+                conversationHistory.push({ role: 'model', parts: [{ text: INITIAL_BOT_GREETING }] });
+                return;
+            }
+            
+            const payload = {
+                contents: currentConversationPayload,
+                systemInstruction: { parts: [{ text: currentSystemInstruction }] },
+                generationConfig: { "temperature": 0.7, "maxOutputTokens": 2048 } // Adjust as needed
+            };
+
+            try {
+                const response = await fetch(GEMINI_API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (typingIndicator.parentNode) chatWindow.removeChild(typingIndicator);
+
+                if (!response.ok) {
+                    const errorData = await response.json().catch(() => null); // Try to parse error
+                    let errorMessageText = `Error: ${response.status} ${response.statusText}`;
+                    if (errorData?.error?.message) errorMessageText += ` - ${errorData.error.message}`;
+                    console.error('Gemini API Error:', errorData || errorMessageText);
+                    addMessage(`Maaf, AIRA sedang mengalami kendala: ${errorMessageText}`, 'bot', 'error');
+                    return;
+                }
+
+                const data = await response.json();
+                if (data.candidates?.[0]?.content?.parts?.[0]?.text) {
+                    const botText = data.candidates[0].content.parts[0].text;
+                    addMessage(botText, 'bot', 'chat', true); // True for Markdown processing
+                    conversationHistory.push({ role: 'model', parts: [{ text: botText }] });
+                } else if (data.promptFeedback?.blockReason) {
+                    addMessage(`Permintaan Anda tidak dapat diproses oleh Aira karena: ${data.promptFeedback.blockReason}.`, 'bot', 'error');
+                }
+                else {
+                    console.error('Unexpected Gemini API response:', data);
+                    addMessage('Maaf, Aira tidak memberikan respons yang valid.', 'bot', 'error');
+                }
+            } catch (error) {
+                if (typingIndicator.parentNode) chatWindow.removeChild(typingIndicator);
+                console.error('Fetch Gemini Error:', error);
+                addMessage(`Masalah koneksi dengan AIRA: ${error.message}`, 'bot', 'error');
+            }
+        }
+
+        async function handleSendMessage() {
+            const messageText = messageInput.value.trim();
+            
+            if (!messageText && !attachedFile) return;
+
+            showChatView(); // Make sure chat view is active
+            let userMessageParts = [];
+            let displayContent = messageText; // What's shown in the user's chat bubble
+
+            let wasFileAttachedBeforeProcessing = !!attachedFile; // Check if file was there before this send
+
+            if (attachedFile) {
+                try {
+                    const base64Data = await readFileAsBase64(attachedFile);
+                    userMessageParts.push({
+                        inlineData: {
+                            mimeType: attachedFile.type,
+                            data: base64Data
+                        }
+                    });
+                    if (attachedFile.type.startsWith('image/')) {
+                        displayContent = { // Object for addMessage to handle image + text
+                            text: messageText,
+                            imageUrl: URL.createObjectURL(attachedFile) // Create a temporary URL for display
+                        };
+                    } else { // For non-image files, append file name to text
+                        displayContent = messageText ? `${messageText} (File: ${attachedFile.name})` : `(File: ${attachedFile.name})`;
+                    }
+                } catch (error) {
+                    console.error("Error reading file:", error);
+                    addMessage("Gagal memproses file. Silakan coba lagi.", 'bot', 'error');
+                    clearFilePreview();
+                    return;
+                }
+            }
+
+            if (messageText) {
+                userMessageParts.push({ text: messageText });
+            }
+
+            // Only add message to UI and history if there's something to send
+            if (userMessageParts.length > 0) {
+                 addMessage(displayContent, 'user');
+                 conversationHistory.push({ role: 'user', parts: userMessageParts });
+            }
+            
+            messageInput.value = '';
+            messageInput.style.height = 'auto'; // Reset textarea height
+            clearFilePreview(); // Clear preview after sending
+
+            const lowerCaseMessage = messageText.toLowerCase();
+            const tiktokUrlMatch = messageText.match(/https?:\/\/(?:www\.|vm\.|vt\.)?tiktok\.com\/[\w\/@\-\?\=\&\%\;\.]+/i);
+
+            let commandHandled = false;
+            // Only handle commands if no file was attached or if the file processing didn't already cover it
+            if (!wasFileAttachedBeforeProcessing) { // If a file WAS attached, assume Gemini will handle it
+                if (tiktokUrlMatch) {
+                    const tiktokUrl = tiktokUrlMatch[0];
+                    await handleTikTokDownloadRequest(tiktokUrl);
+                    commandHandled = true;
+                } else if (lowerCaseMessage.includes("gempa") || lowerCaseMessage.includes("bmkg")) {
+                    await handleBMKGRequest();
+                    commandHandled = true;
+                } else if (lowerCaseMessage.includes("berita") || lowerCaseMessage.includes("antara")) {
+                    await handleAntaraNewsRequest();
+                    commandHandled = true;
+                }
+            }
+
+
+            // If no command was handled AND there was content to send (text or file), call Gemini
+            if (!commandHandled && userMessageParts.length > 0) { 
+                await getGeminiResponse();
+            }
+            closeSidebar(); // Good practice on mobile after sending a message
+        }
+
+
+        newChatButton.addEventListener('click', () => {
+            startNewChat(); 
+        });
+        sendButton.addEventListener('click', handleSendMessage);
+        messageInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault(); // Prevent newline in textarea
+                handleSendMessage();
+            }
+        });
+        
+        // API Key Check
+        const hasValidKeys = GEMINI_API_KEYS && GEMINI_API_KEYS.length > 0 && 
+                             GEMINI_API_KEYS.every(key => key && !key.includes('Ganti dengan API Key Anda') && key.length > 20);
+
+        if (!hasValidKeys) {
+            console.warn("Satu atau lebih API Key belum diatur dengan benar atau array API Key kosong!");
+            const warningDiv = document.createElement('div');
+            warningDiv.textContent = "PERHATIAN: API Key untuk Gemini belum diatur dengan benar. Fitur AI mungkin tidak berfungsi.";
+            warningDiv.style.backgroundColor = "red";
+            warningDiv.style.color = "white";
+            warningDiv.style.textAlign = "center";
+            warningDiv.style.padding = "10px";
+            warningDiv.style.position = "fixed";
+            warningDiv.style.bottom = "0";
+            warningDiv.style.left = "0";
+            warningDiv.style.width = "100%";
+            warningDiv.style.zIndex = "2000";
+            document.body.appendChild(warningDiv);
+            // Disable interaction if keys are bad
+            sendButton.disabled = true;
+            messageInput.placeholder = "Fitur AI tidak aktif karena API Key bermasalah.";
+            messageInput.disabled = true;
+        }
+
+        // Initial state
+        if (conversationHistory.length === 0) {
+             showWelcomeView(); // Show welcome screen if no history
+        }
+        startNewChat(); // Start with a greeting
+    });
